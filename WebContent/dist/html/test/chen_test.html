@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+	<a href="/wikestudy/dist/jsp/teacher/course/questionnaire/questionnaire_make?secId=1">管理员=制作试卷</a>
+					   
+	<a href="/wikestudy/dist/jsp/student/course/questionnaire/questionnaire?secId=1">学生答题</a>
+	
+	<a href="/wikestudy/dist/jsp/teacher/course/questionnaire/answer_situation?secId=1">答题情况</a>
+	
+	<a href="/wikestudy/dist/jsp/manager/article/article_manage">文章管理</a>
+	
+	<a href="/wikestudy/dist/jsp/student/article/article_show?cp=1&aTypeId=1">展示文章</a>
+	
+	
+	<a href="/wikestudy/dist/jsp/Manager/page/teacher_manage?cp=1">老师管理</a>
+	<a href="/wikestudy/dist/jsp/Student/course/media_show?secId=1&chaId=1&couId=1">视频播放页面</a>
+	<a href="/wikestudy/dist/jsp/Student/course/media_show?couId=15chaId=15&&secId=20">视频播放页面</a>
+	<a href="/wikestudy/dist/jsp/Manager/media/media_upload.jsp?secId=20">上传视频</a>
+
+	<a href="/wikestudy/dist/jsp/Manager/course/create_course_f">创建课程</a>
+	
+	<br/>
+	<input type="button" id="teacher" onclick="user()" value="老师"/>
+	<input type="button" id="student" onclick="user()" value="学生"/>
+	<script type="text/javascript" src="/wikestudy/dist/js/jquery-1.9.1.js"></script>
+	<script>
+		function user() {
+			var ev=event ||e;
+			
+			var user=ev.target.id;//$('#user').attr('value');
+			$.ajax ({
+				type:"get",
+				url:"/wikestudy/chen/test",
+				async:true,
+				data:{'user':user},
+			});
+		}
+
+		
+	</script>
+</body>
+</html>

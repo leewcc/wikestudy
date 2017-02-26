@@ -1,0 +1,2118 @@
+@CHARSET "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    color: #444
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", Arial, sans-serif
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #00a7d3
+}
+
+a:hover {
+    color: #0067a6
+}
+
+legend {
+    color: #000
+}
+
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    overflow-y: scroll
+}
+
+.outside {
+    width: 100%;
+    min-width: 1024px;
+    background: #f6f7fb;
+    text-align: center
+}
+
+.wrapper {
+    width: 70%;
+    min-width: 1002px;
+    margin: 0 auto;
+    text-align: left
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    color: white;
+    border-radius: 3px
+}
+
+label {
+    cursor: pointer
+}
+
+.overflow {
+    overflow: hidden
+}
+
+.center {
+    text-align: center
+}
+
+.login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: 2px solid #00abd8!important
+}
+
+#page {
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+    padding: 20px 0
+}
+
+#page a,
+#page span {
+    padding: 4px 9px;
+    color: #787d81;
+    margin: 0 5px;
+    width: 30px
+}
+
+#page a#previousPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: white;
+    border-right: 15px solid #b2babd;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#nextPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: #00abd7;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 15px solid #b2babd;
+    border-right: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#previousPage:hover {
+    border-right: 15px solid #00abd7
+}
+
+#page a#nextPage:hover {
+    border-left: 15px solid #00abd7
+}
+
+#page a.selected {
+    background: #00abd7;
+    color: white
+}
+
+#page a:hover {
+    background: #eee
+}
+
+.hidden_textarea {
+    display: none
+}
+
+.show_textarea {
+    display: block;
+    margin: 15px auto
+}
+
+#col_main #create {
+    background: url('/wikestudy/dist/images/common/add_03.png') #f3572e no-repeat center center;
+    width: 25px;
+    height: 25px;
+    margin: 3px 20px 2px 30px
+}
+
+#mana_type .update {
+    background: #00a7d3 no-repeat center center;
+    padding: 5px 10px;
+    margin: 3px 20px 3px 165px
+}
+
+#mana_type .delete {
+    background: url('/wikestudy/dist/dist/images/common/all.png') #f1f2f7 no-repeat 6px -175px;
+    width: 20px;
+    height: 20px;
+    margin: 3px 20px 2px 32px
+}
+
+#reply_all button,
+.make_art button {
+    background: #00a7d3;
+    padding: 10px 30px;
+    margin: 10px 0;
+    float: right
+}
+
+#reply_all button:hover,
+.make_art button:hover {
+    background: #0067a6
+}
+
+.create_course button {
+    padding: 5px 20px;
+    margin: 0 20px;
+    background: #00a7d3;
+    border-radius: 3px
+}
+
+.create_course button:hover {
+    background: #0067a6
+}
+
+#reply_all {
+    padding: 10px;
+    overflow: hidden
+}
+
+#reply_all textarea {
+    width: 98%;
+    border: 1px solid #aaa;
+    padding: 10px;
+    height: 70px
+}
+
+.illegal {
+    color: red!important
+}
+
+#nav {
+    background: white;
+    min-width: 1000px;
+    width: 100%;
+    overflow: hidden
+}
+
+#nav #nav_cancale {
+    letter-spacing: 2px;
+    color: #444;
+    text-align: right;
+    margin: 0 20px;
+    line-height: 70px;
+    background: white
+}
+
+#nav a#nav_cancale:hover {
+    color: #00a7d3
+}
+
+#user {
+    letter-spacing: 2px;
+    color: #444;
+    text-align: right;
+    display: inline;
+    float: right;
+    padding: 0 10px;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    height: 70px
+}
+
+#nav a {
+    display: block;
+    float: right;
+    overflow: hidden;
+    background: white
+}
+
+#nav #nav_big_logo {
+    float: left;
+    display: block;
+    width: 260px;
+    height: 70px
+}
+
+#nav #nav_big_logo img {
+    width: 100%;
+    line-height: 60px;
+    height: 60px;
+    background: white;
+    margin: 5px 0 5px 3px
+}
+
+#nav a#user_img img {
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+    background: white
+}
+
+#user_img img {
+    border-radius: 100%
+}
+
+#wrapper {
+    min-width: 1000px;
+    width: 100%;
+    min-height: 550px;
+    overflow: hidden;
+    background: #f1f2f7
+}
+
+#sidebar {
+    float: left;
+    width: 220px;
+    padding: 35px 20px 30000px 20px;
+    margin-bottom: -30000px;
+    background: #2a3542;
+    color: white;
+    text-align: left
+}
+
+#sidebar ul#first_level {
+    padding: 0
+}
+
+#sidebar ul#first_level li {
+    border-radius: 3px;
+    color: #aeb2b7;
+    overflow: hidden;
+    cursor: pointer;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat 165px 19px
+}
+
+#sidebar ul#first_level li.selected,
+#sidebar ul#first_level li.selected:hover {
+    color: white;
+    background: url('/wikestudy/dist/images/common/all.png') #35404d no-repeat 165px -59px
+}
+
+#sidebar ul#first_level li:hover {
+    color: white;
+    background: url('/wikestudy/dist/images/common/all.png') #35404d no-repeat 165px -13px
+}
+
+#sidebar ul#first_level li a.second_level {
+    color: #a8acb1;
+    display: block;
+    background: #2a3542;
+    padding: 15px 15px 15px 35px
+}
+
+#sidebar ul#first_level .selected a {
+    color: white;
+    display: block;
+    padding: 15px 15px 15px 35px;
+    width: 190px
+}
+
+#sidebar ul#first_level .second_level li:hover a {
+    color: #00a7d3
+}
+
+#sidebar ul#first_level span {
+    display: block;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat 79.54% center;
+    padding: 15px 15px 15px 35px
+}
+
+#sidebar ul#first_level span.fir_per {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -425px -16px
+}
+
+#sidebar ul#first_level span.fir_cou {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -48px
+}
+
+#sidebar ul#first_level span.fir_topic {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -272px
+}
+
+#sidebar ul#first_level span.fir_dat {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -194px
+}
+
+#sidebar ul#first_level span.fir_art {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -117px
+}
+
+#sidebar ul#first_level li.selected span.fir_per {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -425px 17px
+}
+
+#sidebar ul#first_level li.selected span.fir_cou {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -80px
+}
+
+#sidebar ul#first_level li.selected span.fir_topic {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -306px
+}
+
+#sidebar ul#first_level li.selected span.fir_dat {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -233px
+}
+
+#sidebar ul#first_level li.selected span.fir_art {
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -426px -154px
+}
+
+#sidebar #first_level ul.second_level {
+    display: none
+}
+
+#sidebar #first_level a.second_level:hover {
+    background: #35404d
+}
+
+#sidebar #first_level li.selected .second_level {
+    display: block
+}
+
+#sidebar ul#first_level .second_level li {
+    background: #35404d
+}
+
+#column {
+    background: #f1f2f7;
+    padding-bottom: 30000px;
+    margin: 10px 0 -30000px 280px
+}
+
+#col_head {
+    background: white;
+    width: auto;
+    overflow: hidden;
+    margin: 10px 0 40px 0;
+    border-radius: 1px
+}
+
+#col_main {
+    background: white;
+    margin: 30px 0;
+    padding-bottom: 15px
+}
+
+#fir_head_per {
+    padding-left: 20px;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -355px 10px;
+    font-weight: normal;
+    color: #696969;
+    margin: 0 5px 0 20px;
+    float: left;
+    line-height: 36px
+}
+
+#fir_head_cou {
+    padding-left: 20px;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -355px -138px;
+    font-weight: normal;
+    color: #696969;
+    margin: 0 5px 0 15px;
+    float: left;
+    line-height: 36px
+}
+
+#sec_head {
+    font-weight: normal;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -57px 6px;
+    color: white;
+    line-height: 36px;
+    padding: 0 32px;
+    float: left
+}
+
+#fir_head_top {
+    padding-left: 20px;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -355px -100px;
+    font-weight: normal;
+    color: #696969;
+    margin: 0 5px 0 20px;
+    float: left;
+    line-height: 36px
+}
+
+#fir_head_art {
+    padding-left: 20px;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -355px -100px;
+    font-weight: normal;
+    color: #696969;
+    margin: 0 5px 0 20px;
+    float: left;
+    line-height: 36px
+}
+
+#fir_head_dat {
+    padding-left: 20px;
+    background: url('/wikestudy/dist/images/common/all.png') no-repeat -355px -100px;
+    font-weight: normal;
+    color: #696969;
+    margin: 0 5px 0 20px;
+    float: left;
+    line-height: 36px
+}
+
+#column form#up_class {
+    background: white;
+    margin: 40px 80px;
+    border-radius: 10px;
+    padding: 30px 0
+}
+
+#column form#up_class input {
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+#column form button#update_data {
+    color: white;
+    background-color: #00A7D3;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 10px
+}
+
+#column form button#update_data:hover,
+#mana_upda button:hover,
+#star_selected button:hover,
+#star_no_selected #set_top:hover,
+form#up_password button:hover {
+    background-color: #008972
+}
+
+#column form#up_class table {
+    border-spacing: 25px;
+    margin: -25px auto 0;
+    border-collapse: separate
+}
+
+#column form#up_class table td {
+    text-align: left;
+    vertical-align: top
+}
+
+#column form#up_class table td span {
+    padding: 0 10px;
+    color: #aaa
+}
+
+#column form#up_class input:hover {
+    border: 1px solid #00a7d3
+}
+
+#choic_head {
+    overflow: hidden
+}
+
+#choic_head #no_sel_head,
+#choic_head #sel_head {
+    border-bottom: 1px solid #f1f2f7;
+    font-weight: normal;
+    text-align: center;
+    font-size: 16px;
+    float: left;
+    width: 50%;
+    color: #797979;
+    display: block;
+    padding: 12px 0 9px
+}
+
+#choic_head #sel_head {
+    background: white
+}
+
+#choic_head #no_sel_head {
+    background: #f1f2f7
+}
+
+#choic_head #no_sel_head:hover {
+    background: #eee;
+    color: #00a7d3
+}
+
+form#give_file {
+    margin: 15px auto 15px;
+    overflow: hidden;
+    width: 510px
+}
+
+form#give_file div {
+    float: left;
+    width: 405px;
+    height: 30px;
+    text-align: center;
+    margin: 3px 0;
+    border-radius: 7px;
+    position: relative;
+    border: 1px solid #aaa
+}
+
+form#give_file div:hover {
+    border: 1px solid #00a7d3
+}
+
+#give_file input {
+    width: 477px;
+    position: absolute;
+    cursor: pointer;
+    left: -72px;
+    color: #999;
+    padding: 4px 0;
+    line-height: 14px;
+    top: 0;
+    outline: 0;
+    border: 0
+}
+
+#give_file button {
+    background: url('/wikestudy/dist/images/common/all.png') #97d45b no-repeat 15px -102px;
+    color: white;
+    padding: 9px 15px 9px 37px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold
+}
+
+#give_file button:hover,
+#add:hover,
+#reduce:hover,
+#stu_data #up_stu:hover,
+#stu_data #add_stu:hover {
+    background-color: #00A7D3
+}
+
+form#add_stu {
+    margin: 0 auto;
+    min-width: 870px
+}
+
+form#add_tea {
+    margin: 0 25px
+}
+
+#add_stu table,
+#add_tea table {
+    border-radius: 3px;
+    width: 100%;
+    text-align: left;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-collapse: collapse
+}
+
+#add_stu th {
+    border-bottom: 1px solid #aaa;
+    padding: 12px 20px 11px 28px
+}
+
+#add_stu td {
+    border-bottom: 1px solid #aaa;
+    padding: 9px 0 5px 23px
+}
+
+#add_stu input,
+#add_tea input {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 5px
+}
+
+#add_stu select {
+    border-radius: 3px;
+    padding: 3px 100px 3px 5px
+}
+
+#add_tea select {
+    border-radius: 3px;
+    padding: 3px 20px 3px 5px
+}
+
+#add_stu input:hover,
+#add_tea input:hover {
+    border: 1px solid #00a7d3
+}
+
+#add,
+#reduce {
+    padding: 7px 30px;
+    background: #97d45b;
+    color: white;
+    float: left;
+    border: 0;
+    border-radius: 3px;
+    margin: 10px 0;
+    cursor: pointer
+}
+
+#reduce {
+    float: right
+}
+
+#button_gro {
+    overflow: hidden
+}
+
+#add_tea th {
+    border-bottom: 1px solid #aaa;
+    padding: 12px 15px 11px 28px
+}
+
+#add_tea td {
+    border-bottom: 1px solid #aaa;
+    padding: 9px 0 5px 23px
+}
+
+#add_tea .tea_num {
+    width: 100px
+}
+
+#add_tea .tea_name {
+    width: 100px
+}
+
+#add_tea .tea_pass {
+    width: 100px
+}
+
+#add_tea .tea_gender {
+    width: 50px
+}
+
+#add_tea .tea_intro {
+    width: 200px
+}
+
+form#query_stu {
+    overflow: hidden;
+    margin: 30px 56px 10px
+}
+
+fieldset {
+    border: 1px solid #aaa;
+    padding: 15px 30px;
+    border-radius: 3px
+}
+
+legend {
+    text-align: left;
+    padding: 0 15px
+}
+
+form#query_stu select {
+    padding: 3px;
+    width: 190px;
+    margin-right: 40px
+}
+
+form#query_stu label {
+    margin: 10px auto;
+    float: left;
+    display: block
+}
+
+#search {
+    background: url(/wikestudy/dist/images/common/whitesearch.png) no-repeat #00A7D3 center;
+    padding: 15px 30px;
+    float: right;
+    margin: 0 10px;
+}
+#search:hover{
+    background-color: #0067a6;
+}
+#stu_data {
+    margin: 40px auto 20px;
+    min-width: 720px;
+    max-width: 93%
+}
+
+#stu_data table {
+    width: 100%;
+    text-align: left;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-collapse: collapse;
+    border-radius: 3px
+}
+
+#stu_data #add_stu {
+    background: url(/wikestudy/dist/images/common/all.png) #97d45b no-repeat 15px -106px;
+    color: white;
+    padding: 5px 15px 5px 40px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+#stu_data #up_stu {
+    background: #97d45b;
+    color: white;
+    padding: 5px 15px 5px 15px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold
+}
+
+#stu_data th,
+#add_stu th,
+#star_no_selected th,
+#mana_type th,
+#see_topic th {
+    background: #eee;
+    border-bottom: 1px solid #aaa;
+    padding: 12px 20px 11px 23px
+}
+
+#stu_data tr:hover,
+#add_stu tr:hover,
+#star_no_selected tr:hover,
+#mana_type tr:hover,
+#see_topic tr:hover {
+    background: #eee
+}
+
+#stu_data td {
+    border-bottom: 1px solid #aaa;
+    padding: 9px 0 5px 23px
+}
+
+#stu_data tr:hover {
+    background: #f5f5f5
+}
+
+#stu_data .reset,
+#mana_type .reset {
+    background: #f1f2f7;
+    float: left;
+    color: #797c81;
+    border-radius: 3px;
+    border: 0;
+    padding: 3px 10px;
+    margin: 3px 20px;
+    cursor: pointer
+}
+
+#stu_data .reset:hover,
+#mana_type .reset:hover {
+    background: #00a7d3;
+    color: white
+}
+
+#stu_data .delete,
+#add_stu .delete,
+#add_tea .delete,
+#see_topic .delete {
+    margin: 3px 20px 3px 28px;
+    border: 0;
+    border-radius: 3px;
+    width: 21px;
+    height: 21px;
+    background: url(/wikestudy/dist/images/common/all.png) #f1f2f7 no-repeat 6px -175px;
+}
+
+#stu_data .delete:hover,
+#add_stu .delete:hover,
+#add_tea .delete:hover,
+#mana_type .delete:hover,
+#see_topic .delete:hover,
+#mana_con #see_topic .delete:hover {
+    background: url(/wikestudy/dist/images/common/all.png) #f3572e no-repeat 6px -158px
+}
+/* 覆盖上面的样式  */
+#mana_con #see_topic .delete {
+    margin: 3px 20px 3px 28px;
+    border: 0;
+    border-radius: 3px;
+    width: 21px;
+    height: 21px;
+    background: url(/wikestudy/dist/images/common/all.png) #f1f2f7 no-repeat 6px -175px;
+}
+
+
+#stu_data a {
+    color: #00a7d3
+}
+
+#stu_data .stu_other {
+    width: 200px;
+    padding: 4px 10px;
+    overflow: hidden
+}
+
+#star_selected {
+    margin: 18px 16px 5px 26px;
+    padding: 17px 25px;
+    background: white;
+    text-align: center
+}
+
+#star_selected p {
+    text-align: left
+}
+
+#star_selected form div#star_main {
+    overflow: hidden;
+    margin: 20px auto 25px
+}
+
+#star_selected div.one_stu {
+    width: 8%;
+    text-align: center;
+    margin: 0 1%;
+    float: left
+}
+
+#star_selected div.one_stu img {
+    width: 100%;
+    background: black;
+    border-radius: 100%
+}
+
+#star_selected button,
+#star_no_selected #set_top {
+    margin: 20px auto 5px;
+    padding: 8px 70px;
+    background: #00A7D3;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    word-spacing: 10px
+}
+
+#star_no_selected {
+    background: white;
+    padding: 16px 19px 10;
+    margin: 5px 16px 5px 26px
+}
+
+#star_no_selected h2 {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #f1f2f7
+}
+
+#star_no_selected form {
+    padding: 14px 60px 20px
+}
+
+#star_no_selected table {
+    border-radius: 3px;
+    text-align: left;
+    border-left: 1px solid #aaa;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-collapse: collapse;
+    width: 100%
+}
+
+#star_no_selected th,
+#star_no_selected td {
+    border-bottom: 1px solid #aaa;
+    padding: 12px 5px 10px 29px
+}
+
+#star_no_selected tr:hover {
+    background: #eee
+}
+
+#star_no_selected #page {
+    margin: 0 auto 20px;
+    padding: 0 0 40px
+}
+
+#mana_type {
+    overflow: hidden;
+    margin: 10px 50px 10px
+}
+
+#mana_type th {
+    border-bottom: 1px solid #aaa;
+    font-weight: normal;
+    padding: 10px 10px
+}
+
+#mana_type td {
+    border-bottom: 1px solid #aaa;
+    font-weight: normal;
+    padding: 10px 10px
+}
+
+#mana_type #type_name,
+#mana_type #type_num {
+    width: 150px
+}
+
+#mana_type table {
+    margin: 30px 0;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left
+}
+
+#mana_type input {
+    border: 1px solid white;
+    padding: 3px 0
+}
+
+#mana_type input:hover {
+    border: 1px solid #00a7d3
+}
+
+form#mana_lab fieldset {
+    border: 1px solid #aaa;
+    padding: 15px 30px
+}
+
+form#mana_lab legend {
+    text-align: left;
+    padding: 0 20px
+}
+
+form#mana_lab select {
+    padding: 3px;
+    width: 190px;
+    margin-right: 80px
+}
+
+form#mana_lab {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+    overflow: hidden
+}
+
+#mana_con {
+    background: white;
+    padding: 20px 20px;
+    margin: 20px
+}
+
+#mana_lab select {
+    padding: 3px 10px 3px 5px
+}
+
+/*#mana_lab button {
+    background: #00A7D3;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 0;
+    color: white;
+    margin: 3px 20px 3px 20px;
+    cursor: pointer
+}
+
+#mana_lab button:hover {
+    background: #008570
+}*/
+
+#see_topic {
+    width: 100%;
+    border-radius: 3px;
+    border-top: 1px solid #aaa;
+    border-left: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-collapse: collapse
+}
+
+#see_topic .up {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    border-radius: 3px;
+    background: url('/wikestudy/dist/images/common/all.png') white no-repeat -163px -81px
+}
+
+#see_topic .cancel {
+    width: 14px;
+    height: 14px;
+    border: 0;
+    border-radius: 3px;
+    background: url('/wikestudy/dist/images/common/all.png') #111 no-repeat -163px -103px;
+    cursor: pointer
+}
+
+#see_topic td {
+    border-bottom: 1px solid #aaa;
+    padding: 5px 20px;
+    text-align: left;
+    font-weight: normal
+}
+
+#see_topic th {
+    text-align: left
+}
+
+#see_topic input {
+    background: #00A7D3;
+    padding: 5px 20px;
+    border: 0;
+    color: white;
+    cursor: pointer
+}
+#see_topic input:hover{
+    background: #0067a6;
+}
+#see_topic a {
+    color: #00a7d3
+}
+
+#see_topic a:hover {
+    color: #0066a6
+}
+
+#mana_upda {
+    background: white;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    padding: 15px 0 30px
+}
+
+#mana_upda img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%
+}
+
+#mana_upda input {
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+#mana_upda button {
+    color: white;
+    background-color: #00A7D3;
+    padding: 10px 100px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 30px
+}
+
+#mana_upda table {
+    border-spacing: 20px;
+    margin: 0 auto;
+    border-collapse: separate
+}
+
+#mana_upda table td {
+    text-align: left;
+    vertical-align: top
+}
+
+#mana_upda table th {
+    vertical-align: top
+}
+
+#mana_upda table td span {
+    padding: 0 10px
+}
+
+#mana_upda input:hover {
+    border: 1px solid #00a7d3
+}
+
+#mana_upda textarea {
+    width: 500px;
+    padding: 5px;
+    height: 100px
+}
+
+#intro {
+    background: white;
+    border-radius: 10px;
+    padding: 35px 45px;
+    margin: 20px auto;
+    overflow: hidden
+}
+
+#intro #intro_img {
+    width: 40%;
+    float: left;
+    margin-right: 20px
+}
+
+#intro #intro_main {
+    margin-left: 40%;
+    position: relative
+}
+
+#intro #intro_main h3 {
+    font-size: 18px;
+    color: #686868
+}
+
+#intro #intro_main span {
+    font-size: 12px;
+    color: #7c7c7c
+}
+
+#intro #intro_main .play {
+    background: url("/wikestudy/dist/images/common/Rounded.png") no-repeat left center
+}
+
+#intro #intro_main p {
+    font-size: 16px;
+    color: #686868;
+    height: 50px;
+    margin: 20px 0;
+    max-height: 100px
+}
+
+#intro #intro_main .button {
+    display: block;
+    width: 60px;
+    margin: 30px 20px 10px;
+    border: 0;
+    border-bottom: 3px solid #0068a7;
+    padding: 10px 20px;
+    background: #00a7d3;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none
+}
+
+.buttonqun {
+    overflow: hidden
+}
+
+#intro1 {
+    overflow: hidden
+}
+
+#mana_cou {
+    background: white
+}
+
+#create_cou {
+    margin: 10px 1%;
+    width: 20%;
+    padding: 0 1% 0;
+    float: left
+}
+
+#create_cou a {
+    display: block;
+    color: #3cbadc;
+    font-size: 0
+}
+
+#create_cou img {
+    width: 100%;
+    height: 100%
+}
+
+#mana_cou ul {
+    overflow: hidden;
+    padding-left: 20px
+}
+
+#mana_cou li.one_cou {
+    width: 20。7%;
+    float: left;
+    text-align: left;
+    margin: 10px 1%;
+    padding: 8px 1%;
+    border: 1px solid #aeb2b7;
+    border-radius: 3px
+}
+
+#mana_cou li.one_cou a {
+    display: block;
+    line-height: 0
+}
+
+#mana_cou li.one_cou img {
+    width: 100%;
+    height: 10em
+}
+
+#stu_dei {
+    margin: 40px 0 10px;
+    background: white;
+    padding: 30px 45px 35px 20px;
+    overflow: hidden
+}
+
+#stu_dei img {
+    width: 200px;
+    margin-right: 2%;
+    float: left;
+    border-radius: 2000px
+}
+
+#stu_dei form {
+    text-align: left
+}
+
+#stu_dei form div {
+    margin-left: 26%
+}
+
+#stu_dei form input {
+    width: 83%;
+    margin: 10px;
+    padding: 3px
+}
+
+#stu_dei form select {
+    width: 84%;
+    margin: 10px;
+    padding: 3px
+}
+
+#stu_dei form textarea {
+    width: 93%;
+    padding: 3px;
+    height: 50px;
+    margin-bottom: 10px
+}
+
+#stu_dei form label {
+    display: block
+}
+
+#stu_dei form button {
+    padding: 10px 30px;
+    margin: 10px 20px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background-color: #00abd7
+}
+
+#stu_dei form button:hover {
+    background-color: #0067a6
+}
+
+#stu_dei #stu_lab span {
+    display: block;
+    margin: 10px 0;
+}
+
+#stu_lab {
+    vertical-align: top
+}
+
+#stu_dei form span {
+    margin: 0 40px 0 0;
+    text-align: left
+}
+
+#stu_sidebar li {
+    text-align: center;
+    float: left;
+    width: 33.33%
+}
+
+#stu_sidebar li a {
+    color: #666;
+    display: block;
+    padding: 15px
+}
+
+#stu_sidebar li a:hover {
+    color: #00abd7;
+    background: #eee
+}
+
+#stu_sidebar {
+    margin: 10px 0;
+    background: white;
+    padding: 0;
+    overflow: hidden
+}
+
+#stu_side_main {
+    margin: 10px 0;
+    background: white;
+    padding: 30px 45px 35px 20px;
+    text-align: left
+}
+
+.stu_topic {
+    padding-bottom: 10px;
+    margin-top: 10px;
+    border-bottom: 1px solid #aaa
+}
+
+.stu_topic h3 {
+    font-weight: normal
+}
+
+.stu_topic span {
+    font-size: 12px;
+    color: #666
+}
+
+.create_course ul {
+    padding: 20px;
+    margin: 10px auto;
+    border-collapse: separate;
+    border-spacing: 10px;
+    text-align: left
+}
+
+.create_course ul li {
+    margin: 10px
+}
+
+.create_course ul li a {
+    display: block;
+    width: auto;
+    margin: 0 20px 20px
+}
+
+.create_course ul li a img {
+    height: 150px
+}
+
+.create_course label {
+    margin: 0 20px 20px;
+    display: block
+}
+
+.create_course input {
+    width: 100%;
+    padding: 3px
+}
+
+.create_course textarea {
+    height: 70px;
+    width: 100%;
+    padding: 3px
+}
+
+.create_course select {
+    width: 100%;
+    padding: 3px
+}
+
+#add_label {
+    margin: 10px 60px;
+    padding: 30px 40px;
+    background: white;
+    overflow: hidden;
+}
+
+#add_label ul {
+    width: 100%;
+    text-align: left;
+    border-collapse: separent;
+    border-spacing: 20px
+}
+
+#add_label label{
+    display: block;
+    margin: 0 0 5px;
+}
+
+#add_label ul li {
+    margin: 10px
+}
+
+#add_label input,
+#add_label textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px
+}
+
+#add_label textarea {
+    height: 50px
+}
+
+#add_label button {
+    padding: 5px 20px;
+    margin: 0 20px;
+    color: white;
+    cursor: pointer;
+    border: 1px solid #aaa;
+    background: #00a7d3;
+    border-radius: 3px
+}
+
+#update_cou {
+    margin: 20px 40px;
+    padding: 20px;
+    background: white;
+    text-align: left
+}
+
+#update_cou table {
+    border-spacing: 25px;
+    border-collapse: separate
+}
+
+#update_cou table td {
+    vertical-align: top
+}
+
+#update_cou table input {
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+#update_cou table select {
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px
+}
+
+#update_cou table textarea {
+    width: 400px;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 70px
+}
+
+#update_cou label {
+    width: 60px;
+    display: block
+}
+
+#update_cou .tog {
+    width: 16px;
+    height: 10px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -82px 0;
+    margin: 10px
+}
+
+#update_cou .tog:hover {
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -82px -47px
+}
+
+#update_cou .upCha {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat 0 0;
+    margin: 5px
+}
+
+#update_cou .upCha:hover {
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat 0 -50px
+}
+
+#update_cou .downCha {
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -29px -1px;
+    margin: 5px
+}
+
+#update_cou .downCha:hover {
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -29px -50px
+}
+
+#update_cou .insertSec,
+#update_cou .addChapter {
+    display: block;
+    float: left;
+    padding: 4px 10px;
+    color: white;
+    background: #dcdcdc;
+    margin: 5px
+}
+
+#update_cou .insertSec:hover,
+#update_cou .addChapter:hover {
+    background: #b5b5b5
+}
+
+#update_cou .delChapter {
+    width: 20px;
+    height: 23px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -56px 0;
+    margin: 5px
+}
+
+#update_cou .delChapter:hover {
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -56px -49px
+}
+
+#update_cou .addSection,
+#update_cou .delSection {
+    color: #aaa;
+    float: left;
+    font-size: 25px
+}
+
+#update_cou li.liSec {
+    clear: both;
+    margin-left: 30px
+}
+
+#update_cou ul a {
+    color: #00a7d3;
+    float: right;
+    margin: 10px
+}
+
+#update_cou ul a:hover {
+    color: #0067a6
+}
+
+.addChapter，.delChapter {
+    color: #444;
+    margin: 10px
+}
+
+#update_cou .insertCha {
+    background: #dcdcdc;
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0
+}
+
+#update_cou .insertCha:hover {
+    background: #aeb2b7;
+    color: white
+}
+
+#update_cou li {
+    overflow: hidden
+}
+
+#update_cou button {
+    padding: 5px 30px;
+    float: right;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    margin: 10px 0 10px 10px;
+    background: #00a7d3
+}
+
+#update_cou button:hover {
+    background: #0067a6
+}
+
+form#up_password {
+    background: white;
+    margin: 40px 80px;
+    border-radius: 10px;
+    padding: 30px 0
+}
+
+form#up_password input {
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    width: 400px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+form#up_password button {
+    color: white;
+    background-color: #00A7D3;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 10px
+}
+
+form#up_password table {
+    border-spacing: 25px;
+    margin: -25px auto 0;
+    vertical-align: top;
+    border-collapse: separate
+}
+
+form#up_password table td {
+    text-align: left;
+    vertical-align: top
+}
+
+form#up_password table td span {
+    padding: 0 10px;
+    color: #aaa
+}
+
+form#up_password input:hover {
+    border: 1px solid #00a7d3
+}
+
+.make_art label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold
+}
+
+.make_art {
+    margin: 10px 60px;
+    padding: 30px 40px;
+    background: white;
+    text-align: left
+}
+
+.make_art ul {
+    width: 100%;
+    text-align: left;
+    border-collapse: separent;
+    border-spacing: 20px
+}
+
+.make_art ul li {
+    margin: 10px
+}
+
+.make_art input,
+.make_art textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px
+}
+
+.make_art textarea {
+    height: 50px
+}
+
+#re_cou {
+    margin: 10px 60px;
+    padding: 30px 40px;
+    text-align: left;
+    background: white
+}
+
+#col_area {
+    padding-bottom: 15px;
+    overflow: hidden
+}
+
+#mana_art_label {
+    float: left;
+    background: white;
+    padding: 10px;
+    width: 25%
+}
+
+#mana_art_label h2 {
+    text-align: left;
+    font-size: 16px;
+    font-weight: normal
+}
+
+#typeManager input,
+#typeManager textarea {
+    width: 90%;
+    margin: 10px 3px;
+    border-radius: 3px;
+    border: 1px solid #aaa
+}
+
+#typeManager {
+    margin: 20px 0;
+    text-align: left
+}
+
+#typeManager label {
+    display: block;
+    text-align: left
+}
+
+#typeManager button {
+    color: white;
+    background-color: #00A7D3;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 8px;
+    cursor: pointer;
+    margin: 5px 6px 5px 0
+}
+
+#hehe {
+    width: 70%;
+    float: right;
+    background: white
+}
+
+#atype div {
+    border: 1px solid #aaa;
+    padding: 15px 30px;
+    margin: 10px 0
+}
+
+#articleDiv {
+    padding: 20px
+}
+
+.one_art {
+    padding: 10px 0;
+    text-align: left;
+    border-bottom: 1px solid #aaa
+}
+
+.one_art h3 a {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 7px 0
+}
+
+.one_art h3 {
+    margin: 7px 0
+}
+
+.one_art span {
+    color: #aaa;
+    font-size: 12px;
+    margin: 0 20px 0 0
+}
+
+#photoForm {
+    margin: 20px auto
+}
+
+#show_pho {
+    margin: 10px 10px;
+    text-align: left
+}
+
+#photo_form,
+#photoForm {
+    margin: 0;
+    width: 13em;
+    padding: 10px 20px;
+    text-align: left;
+    position: relative
+}
+
+#Photo_url,
+#PhotoUrl {
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    z-index: 2;
+    cursor: pointer
+}
+
+.guide_message {
+    font-weight: normal;
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px
+}
+
+#update_photo {
+    position: relative;
+    left: 0;
+    width: 13em;
+    height: 50px;
+    cursor: pointer;
+    background-color: #00A7D3;
+    color: white;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px
+}
+
+#photoForm div#update_photo {
+    width: 100%;
+    height: 62px
+}
+
+#show_pho h3 {
+    margin: 15px 0 7px
+}
+
+#show_pho img {
+    height: 300px
+}
+
+#myform {
+    margin: 20px auto
+}
+
+#myform input {
+    color: white;
+    background-color: #00A7D3;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 10px
+}
+
+#myform input:hover {
+    background-color: #008972
+}
+
+#upd_data {
+    margin: 30px 20px;
+    background: white;
+    padding: 30px 20px
+}
+
+#upd_data button {
+    color: white;
+    background-color: #00A7D3;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 10px 10px 10px
+}
+
+#upd_data button:hover {
+    background-color: #008972
+}
+
+#create_form {
+    margin: 20px;
+    padding: 20px;
+    text-align: center
+}
+
+#create_form label {
+    margin: 0 10px 0 0
+}
+
+#create_form input {
+    width: 48px;
+    padding: 3px
+}
+
+#create_form button {
+    color: white;
+    background-color: #00A7D3;
+    padding: .4em 2em;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 30px 0 10px
+}
+
+#create_form button:hover {
+    background-color: #008972
+}
+
+#my_form {
+    position: relative
+}
+
+#my_form button {
+    color: white;
+    background-color: #00A7D3;
+    padding: 5px 10px;
+    border-radius: 3px
+}
+
+#my_form .num button {
+    margin: 10px auto 10px;
+    display: block
+}
+
+#my_form ol.queol {
+    list-style: upper-alpha;
+    margin: 20px 0 20px 2%
+}
+
+.num {
+    width: 70px;
+    float: left;
+    text-align: center
+}
+
+.quebutton {
+    text-align: center
+}
+
+.quebutton button {
+    margin: 5px 10px
+}
+
+.choicebutton {
+    text-align: center
+}
+
+.choicebutton label,
+.quebutton label {
+    display: inline;
+    margin: 10px 10px;
+    font-size: 1.5em
+}
+
+.question {
+    margin-left: 100px;
+    text-align: left
+}
+
+.quelabel {
+    vertical-align: top
+}
+
+.question textarea {
+    width: 99%;
+    height: 7em;
+    padding: .5%
+}
+
+#my_form button.submit {
+    color: white;
+    background-color: #00A7D3;
+    padding: 10px 0;
+    border-radius: 3px;
+    width: 130px
+}
+
+.question input.queinput {
+    width: 99%;
+    padding: .5%
+}
+
+#my_form .quelabel {
+    display: block;
+    margin: 10px 0 2px
+}
+
+#my_form button:hover {
+    background-color: #008972
+}
+
+#my_form p {
+    margin: 10px 0 5px
+}
+
+#choice_area,
+#judge_area,
+#fill_area {
+    margin: 10px 40px
+}
+
+.queol li {
+    margin: 10px 0
+}
+
+.queol li input {
+    padding: .5%;
+    width: 98%
+}

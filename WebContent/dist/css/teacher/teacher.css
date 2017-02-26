@@ -1,0 +1,1795 @@
+@CHARSET "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+legend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    color: #444
+}
+
+body {
+    width: 100%;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    font-size: 14px
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,
+ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #00a7d3
+}
+
+@font-face {
+    font-family: "hobo";
+    src: url(/wikestudy/dist/font/segoesc.ttf);
+    font-style: italic
+}
+
+@font-face {
+    font-family: "seg";
+    src: url(/wikestudy/dist/font/segoesc.ttf);
+    font-style: italic
+}
+
+.guide_message {
+    padding-top: 10px;
+    text-align: center !important;
+    font-size: 16px;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+
+a:hover {
+    color: #0067a6
+}
+
+legend {
+    color: #000
+}
+
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+textarea {
+    resize: none;
+    border-radius: 3px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    overflow-y: scroll
+}
+
+.outside {
+    padding-top: 0.1px;
+    width: 100%;
+    min-width: 1024px;
+    background: #f6f7fb;
+    overflow: hidden
+}
+
+.wrapper {
+    margin: 0 auto;
+    width: 70%;
+    min-width: 1000px;
+    text-align: left
+}
+
+button {
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    cursor: pointer
+}
+
+label {
+    cursor: pointer
+}
+
+.center {
+    text-align: center
+}
+
+.hidden_textarea {
+    display: none
+}
+
+.show_textarea {
+    display: block;
+    margin: 15px auto
+}
+
+.illegal {
+    color: red!important
+}
+
+.login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: 2px solid #00abd8!important
+}
+
+#nav {
+    height: 70px;
+    background: #2b2b33;
+    overflow: hidden;
+    color: white
+}
+
+#nav a {
+    float: left;
+    color: white;
+    line-height: 70px;
+    background: #2b2b33
+}
+
+#nav a:hover {
+    text-decoration: none
+}
+
+#nav div {
+    overflow: hidden;
+    background: #2b2b33
+}
+
+#nav a#nav_logo img {
+    background: #2b2b33;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle
+}
+
+#nav ul {
+    float: left;
+    margin-left: 15px;
+    background: #2b2b33;
+    overflow: hidden
+}
+
+#nav ul li {
+    float: left
+}
+
+#nav li a {
+    padding: 0 30px
+}
+
+#nav li a:hover {
+    background: #00abd7
+}
+
+#nav form {
+    float: right;
+    margin: 18px 0;
+    padding: 5px;
+    vertical-align: middle;
+    border-radius: 20px;
+    background: white
+}
+
+#nav input {
+    height: 20px;
+    border: 0;
+    text-indent: 5px;
+    background: white;
+    vertical-align: middle;
+    color: #aaa;
+    outline: 0;
+    font-weight: lighter;
+    font-size: 12px
+}
+
+#nav #search {
+    height: 20px;
+    font-size: 16px;
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: url(/wikestudy/dist/images/common/magnifyingglass.png) no-repeat
+}
+
+#user {
+    display: inline;
+    float: right;
+    padding: 0 10px;
+    width: 190px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    height: 70px;
+    color: #535353
+}
+
+#user a {
+    display: inline;
+    float: right;
+    line-height: 70px
+}
+
+#user #user_name {
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center
+}
+
+#user a:hover {
+    color: #00abd7
+}
+
+#footer {
+    padding-bottom: 0;
+    clear: both;
+    background: #2b2b33 left top
+}
+
+#footer .wrapper {
+    background: #2b2b33
+}
+
+#foot_href {
+    overflow: hidden
+}
+
+#foot_href img {
+    float: left;
+    width: 200px
+}
+
+#foot_href div {
+    display: block;
+    width: 30%;
+    margin: 0 15px 20px;
+    float: right
+}
+
+#foot_href h3 {
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #b4bbbf;
+    text-align: left
+}
+
+#foot_href a {
+    color: #b4bbbf
+}
+
+#foot_href p {
+    color: #b4bbbf
+}
+
+#foot_intro {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #b4bbbf;
+    border-bottom: 1px solid #b4bbbf;
+    margin: 0 auto 10px
+}
+
+#foot_intro a {
+    color: #b4bbbf;
+    display: inline;
+    padding: 20px;
+    line-height: 60px
+}
+
+#foot_copy {
+    color: #b4bbbf;
+    text-align: center;
+    line-height: 40px
+}
+
+.out_pad {
+    padding: 70px 0 0;
+    width: 1002px
+}
+
+#page {
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+    padding: 20px 0
+}
+
+#page a,
+#page span {
+    padding: 4px 9px;
+    color: #787d81;
+    margin: 0 5px;
+    width: 30px
+}
+
+#page a#previousPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: white;
+    border-right: 15px solid #b2babd;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#nextPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: #00abd7;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 15px solid #b2babd;
+    border-right: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#previousPage:hover {
+    border-right: 15px solid #00abd7
+}
+
+#page a#nextPage:hover {
+    border-left: 15px solid #00abd7
+}
+
+#page a.selected {
+    background: #00abd7;
+    color: white
+}
+
+#page a.selected:hover{
+    background: #00abd7;
+}
+
+#page a:hover {
+    background: #eee
+}
+
+#sidebar {
+    list-style: none
+}
+
+#sidebar li {
+    display: block;
+    border: 1px solid black
+}
+
+#aa {
+    display: none
+}
+
+#sidebar li a {
+    line-height: 40px
+}
+
+#center_headA {
+    height: 0;
+    width: 680px;
+    margin: 50px auto;
+    border-top: 30px solid #efc028;
+    border-bottom: 30px solid #efc028;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#center_headB {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    border: 7px solid #f6f7fb;
+    background: #efc028;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold
+}
+
+#center_headC {
+    width: 500px;
+    height: 10px;
+    margin: 0 auto;
+    background: #f6f7fb
+}
+
+#center_headD {
+    position: relative;
+    top: -30px
+}
+
+#sidebar {
+    overflow: hidden;
+    height: 236px;
+    width: auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background: white
+}
+
+#intro_img {
+    float: left;
+    text-align: center;
+    width: 200px
+}
+
+#intro_img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%
+}
+
+#intro_main {
+    margin: -10px 20px 5px 237px
+}
+
+#intro_main p {
+    height: 7em;
+    overflow: auto
+}
+
+#intro_main .name {
+    font-weight: normal;
+    font-size: 25px;
+    overflow: hidden;
+    margin: 10px 0
+}
+
+#nav_head {
+    padding-top: 1px;
+}
+
+#intro_main #intro_grade {
+    color: #93989c;
+    font-size: 12px;
+    margin: 10px 0
+}
+
+#intro_gender {
+    color: #93989c
+}
+
+#intro_main #intro_grade span {
+    margin-right: 15px
+}
+
+#intro_main #intro_time span {
+    color: #efc126;
+    font-weight: bolder;
+    font-size: 30px;
+    word-spacing: 10px;
+    margin: 0 10px
+}
+
+#stu_sidebar {
+    overflow: hidden;
+    background: transparent
+}
+
+#stu_sidebar #course_head,
+#stu_sidebar #topic_head,
+#stu_sidebar #note_head,
+#stu_sidebar #mess_head,
+#stu_sidebar #no_course_head,
+#stu_sidebar #no_topic_head,
+#stu_sidebar #no_note_head,
+#stu_sidebar #no_mess_head {
+    float: left;
+    height: 66px;
+    width: 76px;
+    margin: 10px 10px 0 0;
+    text-align: center;
+    background-image: url('/wikestudy/dist/images/common/all.png');
+    background-repeat: no-repeat
+}
+
+#stu_sidebar #course_head,
+#stu_sidebar #topic_head,
+#stu_sidebar #note_head,
+#stu_sidebar #mess_head {
+    border-radius: 3px 3px 0 0;
+    background-color: white
+}
+
+#stu_sidebar #course_head {
+    background-position: -33px -182px
+}
+
+#stu_sidebar #topic_head {
+    background-position: -358px -236px
+}
+
+#stu_sidebar #note_head {
+    background-position: -33px -125px
+}
+
+#stu_sidebar #mess_head {
+    background-position: -356px -304px
+}
+
+#stu_sidebar #no_course_head,
+#stu_sidebar #no_topic_head,
+#stu_sidebar #no_note_head,
+#stu_sidebar #no_mess_head {
+    background-color: #f6f7fb
+}
+
+#stu_sidebar #no_course_head {
+    background-position: -33px -243px
+}
+
+#stu_sidebar #no_topic_head {
+    background-position: -358px -172px
+}
+
+#stu_sidebar #no_note_head {
+    background-position: -33px -67px
+}
+
+#stu_sidebar #no_mess_head {
+    background-position: -33px -303px
+}
+
+#stu_sidebar #course_head a,
+#stu_sidebar #topic_head a,
+#stu_sidebar #note_head a,
+#stu_sidebar #mess_head a,
+#stu_sidebar #no_course_head a,
+#stu_sidebar #no_topic_head a,
+#stu_sidebar #no_note_head a,
+#stu_sidebar #no_mess_head a {
+    padding: 40px 10px 7px 10px;
+    text-align: center;
+    display: block
+}
+
+#stu_sidebar #no_course_head a,
+#stu_sidebar #no_topic_head a,
+#stu_sidebar #no_note_head a,
+#stu_sidebar #no_mess_head a {
+    color: #aeb2b7
+}
+
+#main_area {
+    min-height: 400px;
+    padding: 30px 36px 36px;
+    margin: 0 auto 30px;
+    background: white;
+    border-radius: 10px
+}
+
+.guide_message {
+    text-align: center;
+    font-size: 18px;
+    margin: 10px
+}
+
+#col_main #create {
+    background: url('/wikestudy/dist/images/common/add_03.png') #f3572e no-repeat center center;
+    width: 25px;
+    height: 25px;
+    margin: 3px 20px 2px 30px
+}
+
+#mana_type .update {
+    background: #00a7d3 no-repeat center center;
+    padding: 5px 10px;
+    margin: 3px 20px 3px 165px
+}
+
+#mana_type .delect {
+    background: url('/wikestudy/dist/images/common/all.png') #f1f2f7 no-repeat 6px -175px;
+    width: 20px;
+    height: 20px;
+    margin: 3px 20px 2px 32px
+}
+
+#reply_all button,
+.make_art button {
+    background: #00a7d3;
+    padding: 10px 30px;
+    margin: 10px 0;
+    float: right
+}
+
+#reply_all button:hover,
+.make_art button:hover {
+    background: #0067a6
+}
+
+#change {
+    width: 10em;
+    padding: 8px 24px;
+    font-size: 14px;
+    float: right;
+    background: #efc028;
+    border: 0;
+    cursor: pointer
+}
+
+#change:hover {
+    background: #fde25d
+}
+
+#mana_upda button,
+#up_password button {
+    background-color: #1bbc9b;
+    padding: 10px 100px;
+    display: block;
+    margin: 10px auto 30px
+}
+
+#update_question #create,
+#update_question button {
+    background-color: #1bbc9b;
+    padding: 10px 100px;
+    margin: 10px 10px 30px
+}
+
+#mana_upda button:hover,
+#up_password button:hover,
+#update_question #create:hover,
+#update_question button:hover {
+    background-color: #008972
+}
+
+#atype button,
+#typeManager button {
+    background-color: #1bbc9b;
+    padding: 10px 100px;
+    display: block;
+    margin: 10px 0 30px
+}
+
+#atype button:hover,
+#typeManager button:hover {
+    background-color: #008972
+}
+
+#update_question p {
+    margin: 5px 0 10px
+}
+
+#update_question input.button {
+    background-color: #1bbc9b;
+    padding: 10px 100px;
+    border: 0;
+    cursor: pointer;
+    border-radius: 3px;
+    color: white;
+    margin: 10px auto 30px
+}
+
+#update_question input.button:hover {
+    background-color: #008972
+}
+
+#add_art {
+    overflow: hidden
+}
+
+#add_art button {
+    color: white;
+    background-color: #00abd7;
+    padding: 10px 70px;
+    float: right;
+    display: block
+}
+
+#add_art button:hover {
+    background-color: #0067a6
+}
+
+.one_art {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa
+}
+
+.one_art h3 a {
+    font-weight: normal;
+    font-size: 18px;
+    margin: 7px 0 15px;
+}
+
+.one_art h3 {
+    margin: 7px 0 20px;
+}
+
+.one_art span {
+    color: #aaa;
+    font-size: 12px;
+    margin: 0 20px 0 0
+}
+
+.one_art span.right {
+    margin: 0
+}
+
+#typeManager fieldset {
+    padding: 20px;
+    clear: both
+}
+
+#typeManager label {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+#typeManager textarea,
+#typeManager input {
+    width: 100%;
+    margin-bottom: 10px
+}
+
+#typeManager textarea {
+    height: 4em
+}
+
+#main_area.course_com {
+    padding: 0
+}
+
+#mana_cou ul {
+    overflow: hidden;
+    padding-left: 20px
+}
+
+#mana_cou li.one_cou {
+    width: 20.7%;
+    float: left;
+    text-align: left;
+    margin: 10px 1%;
+    padding: 8px 1%;
+    border: 1px solid #aeb2b7;
+    border-radius: 3px
+}
+
+#mana_cou li.one_cou a {
+    display: block;
+    height: 130px;
+    vertical-align: center;
+    line-height: 0
+}
+
+#mana_cou li.one_cou img {
+    width: 100%;
+    min-height: 100px;
+    max-height: 130px
+}
+
+#mana_cou li.one_cou h5 {
+    margin: 5px 0;
+    word-wrap: break-word;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#choic_head {
+    overflow: hidden;
+    text-align: center
+}
+
+#choic_head #no_sel_head,
+#choic_head #sel_head {
+    border-bottom: 1px solid #f1f2f7;
+    font-weight: normal;
+    font-size: 16px;
+    float: left;
+    width: 50%;
+    color: #797979;
+    display: block;
+    padding: 12px 0 9px
+}
+
+#choic_head #sel_head {
+    background: white
+}
+
+#choic_head #no_sel_head {
+    background: #f1f2f7
+}
+
+#choic_head #no_sel_head:hover {
+    background: #eee;
+    color: #00a7d3
+}
+
+#mana_upda {
+    background: white;
+    width: 450px;
+    margin: 0 auto;
+    border-radius: 10px;
+    padding: 15px 0 30px
+}
+
+#mana_upda p.illegal {
+    margin: 0 0 0 4em
+}
+
+#mana_upda ul li a#picture {
+    display: block;
+    width: 200px;
+    margin: 0 auto
+}
+
+#mana_upda img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%
+}
+
+#mana_upda input {
+    width: 380px
+}
+
+#mana_upda input,
+#mana_upda select {
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+#mana_upda select {
+    width: 390px
+}
+
+#mana_upda ul p.guide,
+#mana_upda ul label {
+    font-size: 16px;
+    width: 3em;
+    margin: 5px 0 5px;
+    float: left
+}
+
+#mana_upda li {
+    margin-bottom: 20px
+}
+
+#mana_upda ul label {
+    display: block
+}
+
+#mana_upda ul {
+    margin: 0 auto;
+    width: 100%;
+    text-align: left
+}
+
+#mana_upda ul span {
+    padding: 0;
+    font-size: 16px;
+    width: 3em;
+    line-height: 2em;
+    margin: 5px 0 5px 10px;
+}
+
+#mana_upda input:hover {
+    border: 1px solid #00a7d3
+}
+
+#mana_upda textarea {
+    width: 380px;
+    padding: 5px;
+    height: 100px
+}
+
+#photoForm {
+    margin: 20px auto
+}
+
+#show_pho {
+    margin: 10px 10px;
+    text-align: left
+}
+
+#show_pho .guide_message {
+    text-align: left
+}
+
+#photo_form,
+#photoForm {
+    margin: 0;
+    width: 13em;
+    padding: 10px 20px;
+    text-align: left;
+    position: relative
+}
+
+#Photo_url,
+#PhotoUrl,
+#src {
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    width: 13em;
+    z-index: 2;
+    cursor: pointer
+}
+
+.guide_message {
+    font-weight: normal;
+    text-align: left;
+    margin: 10px 0;
+    padding: 10px
+}
+
+#update_photo {
+    position: relative;
+    left: 0;
+    width: 13em;
+    height: 50px;
+    cursor: pointer;
+    background-color: #1bbc9b;
+    color: white;
+    border-radius: 10px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px
+}
+
+#photoForm div#update_photo {
+    width: 100%;
+    height: 62px
+}
+
+#show_pho h3 {
+    margin: 15px 0 7px
+}
+
+#show_pho img {
+    height: 300px
+}
+
+#myform {
+    margin: 20px auto
+}
+
+#myform input {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 10px 70px;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto 10px
+}
+
+#myform input:hover {
+    background-color: #008972
+}
+
+form#up_password {
+    background: white;
+    margin: 0 80px;
+    border-radius: 10px;
+    padding: 30px 0
+}
+
+form#up_password input {
+    display: block;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+form#up_password table {
+    border-spacing: 25px;
+    margin: 0 auto;
+    vertical-align: top;
+    border-collapse: separate
+}
+
+form#up_password table td {
+    text-align: left;
+    vertical-align: top
+}
+
+form#up_password table td span {
+    padding: 0 10px;
+    color: #aaa
+}
+
+form#up_password input:hover {
+    border: 1px solid #00a7d3
+}
+
+#update_cou {
+    margin: 0;
+    padding: 20px;
+    background: white;
+    text-align: left
+}
+
+
+
+#update_cou input {
+    border-radius: 3px;
+    padding: 5px;
+    width: 400px;
+    outline: 0;
+    text-indent: 5px;
+    border: 1px solid #aaa
+}
+
+#update_cou .section input {
+    width: 367px
+}
+
+#update_cou select {
+    border-radius: 3px;
+    padding: 3px 10px 3px 10px
+}
+
+#update_cou textarea {
+    width: 400px;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    height: 70px
+}
+
+#update_cou label {
+    width: 60px;
+    display: block
+}
+
+
+
+#update_cou .tog {
+    width: 16px;
+    height: 10px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -82px -15px;
+    margin: 10px 5px 10px 0;
+}
+
+#update_cou .tog:hover {
+    background: url('/wikestudy/dist/images/common/course.png') no-repeat -82px -47px
+}
+
+ .upCha, .upSec ,.downCha, .downSec{
+    width: 20px;
+    height: 20px;
+    display: block;
+    float: left;
+    padding: 0;
+    background-image: url('/wikestudy/dist/images/common/course.png');
+    background-repeat: no-repeat;
+    margin: 9px 5px;
+}
+.upCha, .upSec{
+    background-position: 0 0;
+}
+ .upCha:hover, .upSec:hover {
+    background-position: 0 -50px
+}
+
+ .downCha, .downSec {
+    background-position: -29px -1px;
+}
+
+ .downCha:hover, .downSec:hover {
+    background-position: -29px -50px
+}
+.insertCha {
+    background: #dcdcdc;
+    display: block;
+    padding: 10px 0;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0
+}
+
+.insertCha:hover {
+    background: #aeb2b7;
+    color: white
+}
+
+.insertSec,
+.addChapter,
+.addSection  {
+    display: block;
+    float: left;
+    margin: 5px;
+    padding: 4px 10px;
+    background: #dcdcdc;
+    border-radius: 3px;
+    color: white;
+}
+.insertSec:hover,
+.addChapter:hover,
+.addSection:hover {
+    background: #0067a6;
+    color: white;
+}
+
+.delChapter,
+.delSection{
+    width: 20px;
+    height: 27px;
+    display: block;
+    float: left;
+    padding: 0;
+    background: url(/wikestudy/dist/images/common/course.png) no-repeat -54px 3px;
+    margin: 5px
+}
+
+.spanCha {
+    font-size: 18px
+}
+
+.delChapter:hover,
+.delSection:hover{
+    background: url(/wikestudy/dist/images/common/course.png) no-repeat -54px -46px
+}
+
+/*.addSection,
+.delSection {
+    color: #aaa;
+    float: left;
+}*/
+
+ .liSec {
+    clear: both;
+    margin-left: 30px
+}
+
+.section{
+    overflow: hidden;
+}
+
+/*#update_cou a {
+    padding: 5px;
+}
+*/
+/*#update_cou ul a:hover {
+    color: #0067a6
+}*/
+
+.addChapter，
+.delChapter {
+    color: #444;
+    margin: 10px
+}
+
+
+#update_cou li {
+    overflow: hidden
+}
+
+#update_cou button {
+    padding: 5px 30px;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    margin: 10px 0 10px 10px;
+    background: #00a7d3
+}
+
+#update_cou button:hover {
+    background: #0067a6
+}
+.ud_cou_l{
+    float: left;
+}
+.ud_cou_l, .ud_cou_r {
+    margin-bottom: 20px;
+}
+.ud_cou_r{
+    margin-left: 80px;
+
+}
+
+.li_cha div,.liSec div{
+    overflow: hidden;
+}
+
+.li_cha{
+    margin: 10px 0;
+}
+
+#upd_data {
+    margin: 30px 20px;
+    background: white;
+    padding: 30px 20px
+}
+
+
+#upd_data button {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 5px 30px;
+    border-radius: 3px;
+    border: 0;
+    font-size: 12px;
+    cursor: pointer;
+    margin: 10px 10px 10px
+}
+
+#upd_data button:hover {
+    background-color: #008972
+}
+
+#update_file_list {
+    border-collapse: separate;
+    border-spacing: 10px;
+    width: 100%
+}
+
+#update_file_list tr {
+    padding: 10px
+}
+
+#update_file_list input {
+    padding: 3px
+}
+
+#update_file_list button {
+    background: #00a7d3;
+    padding: 10px 30px;
+    margin: 7px 0;
+    float: right
+}
+
+.one_data button {
+    background: #00a7d3;
+    padding: 10px 30px;
+    margin: 10px;
+    float: right
+}
+
+#update_file_listbutton:hover,
+.one_data button:hover {
+    background: #0067a6
+}
+
+.one_data img {
+    width: 30px;
+    height: 30px;
+    float: left;
+    margin: 13px 20px 13px 0;
+}
+
+.one_data form {
+    overflow: hidden
+}
+
+.one_data input {
+    margin: 13px 0;
+    padding: 5px;
+    width: 500px;
+}
+
+#typeManager .one_art_type {
+    width: 300px;
+    float: left
+}
+
+#typeManager .one_art_type input,
+#typeManager .one_art_type textarea {
+    width: 85%
+}
+
+.make_art label {
+    display: block;
+    margin: 10px 0;
+    font-weight: bold
+}
+
+.make_art {
+    background: white;
+    text-align: left
+}
+
+.make_art ul {
+    width: 100%;
+    text-align: left;
+    border-collapse: separent;
+    border-spacing: 20px
+}
+
+.make_art ul li {
+    margin: 10px
+}
+
+.make_art input,
+.make_art textarea {
+    width: 100%;
+    padding: 3px;
+    border: 1px solid #aaa;
+    border-radius: 3px
+}
+
+.make_art textarea {
+    height: 50px
+}
+
+#re_cou {
+    margin: 10px 60px;
+    padding: 30px 40px;
+    text-align: left;
+    background: white
+}
+
+#artContent {
+    width: 600px;
+    height: 1000px
+}
+
+#create_form {
+    margin: 20px;
+    padding: 20px;
+    text-align: center
+}
+
+#create_form fieldset {
+    padding: 20px
+}
+
+#create_form legend {
+    padding: 0 20px
+}
+
+#create_form label {
+    margin: 0 10px 0 0
+}
+
+#create_form input {
+    width: 48px;
+    padding: 3px
+}
+
+#create_form button {
+    color: white;
+    background-color: #1bbc9b;
+    padding: .4em 2em;
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 30px 0 10px
+}
+
+#create_form button:hover {
+    background-color: #008972
+}
+
+#my_form {
+    position: relative
+}
+
+#my_form button {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 5px 10px;
+    border-radius: 3px
+}
+
+#my_form fieldset {
+    padding: 20px
+}
+
+#my_form legend {
+    padding: 0 20px
+}
+
+#my_form .num button {
+    margin: 10px auto 10px;
+    display: block
+}
+
+#my_form ol.queol {
+    list-style: upper-alpha;
+    margin: 20px 0 20px 2%
+}
+
+ol.queol li input.radio {
+    width: auto
+}
+
+#update_question .right_answer:after {
+    width: 16px;
+    content: url(/wikestudy/dist/images/system/right.png);
+    height: 16px;
+    margin-left: 15px;
+    line-height: 16px;
+    position: relative;
+    top: 3px
+}
+
+#update_question .right_answer {
+    color: green
+}
+
+#update_question .error_answer:after {
+    width: 16px;
+    content: url(/wikestudy/dist/images/system/wrong.png);
+    height: 16px;
+    margin-left: 15px;
+    line-height: 16px;
+    position: relative;
+    top: 3px
+}
+
+#update_question .error_answer {
+    color: red
+}
+
+ol.queol li input.input,
+#update_question input.input {
+    height: 20px;
+    width: 94%
+}
+
+#update_question textarea {
+    width: 97.5%;
+    padding: 1%;
+    margin: 5px 0 10px
+}
+
+#update_question label {
+    display: block;
+    overflow: hidden;
+    margin-top: 5px;
+    line-height: 24px
+}
+
+.num {
+    width: 70px;
+    float: left;
+    text-align: center
+}
+
+.one_choice,
+.one_fill,
+.one_judge {
+    margin: 20px 0
+}
+
+.quebutton {
+    text-align: center
+}
+
+.quebutton button {
+    margin: 5px 10px
+}
+
+.choicebutton {
+    text-align: center
+}
+
+.choicebutton label,
+.quebutton label {
+    display: inline;
+    margin: 10px 10px;
+    font-size: 1.5em
+}
+
+.question {
+    margin-left: 100px;
+    text-align: left
+}
+
+.quelabel {
+    vertical-align: top
+}
+
+.question textarea {
+    width: 99%;
+    height: 7em;
+    padding: .5%
+}
+
+#my_form button.submit {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 10px 0;
+    border-radius: 3px;
+    width: 130px
+}
+
+.question input.queinput {
+    width: 99%;
+    padding: .5%
+}
+
+#my_form .quelabel {
+    display: block;
+    margin: 10px 0 2px
+}
+
+#my_form button:hover {
+    background-color: #008972
+}
+
+#my_form p {
+    margin: 10px 0 5px
+}
+
+#choice_area,
+#judge_area,
+#fill_area {
+    margin: 10px 40px
+}
+
+.queol li {
+    margin: 10px 0
+}
+
+.queol li input {
+    padding: .5%;
+    width: 98%
+}
+
+#answer_heading {
+    font-size: 30px;
+    text-align: center;
+    font-family: "hobo"
+}
+
+#choice_area,
+#judge_area,
+#fill_area {
+    margin: 30px 0
+}
+
+#choice_area h1,
+#judge_area h1,
+#fill_area h1 {
+    font-size: 18px
+}
+
+#choice_area hr,
+#judge_area hr,
+#fill_area hr {
+    margin: 5px 0;
+    color: #DDDD
+}
+
+.question_content {
+    font-size: 16px;
+    margin: 15px 0 5
+}
+
+.question_content:after {
+    content: ""
+}
+
+.choice_content {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    margin: 12px;
+    border-radius: 3px
+}
+
+.choice_content:hover {
+    border: 1px solid #aaa;
+    background: #eee;
+    color: #00a7d3
+}
+
+.choice_content input {
+    float: left;
+    height: 20px;
+    width: 16px
+}
+
+.choice_content span {
+    display: block;
+    margin-left: 30px
+}
+
+.one_fill textarea {
+    width: 100%;
+    border-radius: 3px;
+    margin: 5px 0;
+    height: 5em
+}
+
+.choice_content span.choice_span {
+    display: inline;
+    float: left;
+    margin: 0 5px
+}
+
+.button_qun {
+    text-align: center
+}
+
+#atype div {
+    margin: 10px 0
+}
+
+#atype div input,
+#atype div textarea {
+    display: block
+}
+
+.create_course li {
+    margin: 10px 0
+}
+
+.create_course ul {
+    width: 520px;
+    margin: 0 auto
+}
+
+.create_course input,
+.create_course textarea,
+.create_course select {
+    width: 75%;
+    padding: 3px
+}
+
+.create_course span {
+    vertical-align: top
+}
+
+.create_course textarea {
+    height: 5em
+}
+
+.create_course button {
+    padding: 5px 20px;
+    margin: 0 20px;
+    background: #00a7d3;
+    border-radius: 3px
+}
+
+.create_course button:hover {
+    background: #0067a6
+}
+
+#main_area #video {
+    width: 100%;
+    text-align: center
+}
+
+.question_tea {
+    display: block;
+    margin: 10px 5px;
+}
+
+.see_question p {
+    margin: 5px 0;
+}
+
+/*** 上传视频 ***/
+form#give_file {
+    margin: 15px auto 15px;
+    overflow: hidden;
+    width: 510px
+}
+
+form#give_file div {
+    float: left;
+    width: 405px;
+    height: 30px;
+    text-align: center;
+    margin: 3px 0;
+    border-radius: 7px;
+    position: relative;
+    border: 1px solid #aaa
+}
+
+form#give_file div:hover {
+    border: 1px solid #00a7d3
+}
+
+#give_file input {
+    width: 477px;
+    position: absolute;
+    cursor: pointer;
+    left: -72px;
+    color: #999;
+    padding: 4px 0;
+    line-height: 14px;
+    top: 0;
+    outline: 0;
+    border: 0
+}
+
+#give_file button {
+    background: url('/wikestudy/dist/images/common/all.png') #97d45b no-repeat 15px -102px;
+    color: white;
+    padding: 9px 15px 9px 37px;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+    float: right;
+    font-weight: bold
+}
+#give_file button:hover{
+    background-color: #00A7D3
+}
+
+.wangEditor-container .wangEditor-txt{
+    min-height: 150px;
+}
+
+/* 后期临时加的 */
+.back{
+    overflow: hidden;
+}
+
+.back button{
+    float: right;
+}

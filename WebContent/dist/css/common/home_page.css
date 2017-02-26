@@ -1,0 +1,2470 @@
+@CHARSET UTF-8;
+body,h1,h2,h3,h4,h5,h6,hr,p,ul,ol,li,fieldset,legend,input,textarea,th,td {
+    margin: 0;
+    padding: 0;
+    color: #444
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: Microsoft YaHei, Arial, sans-serif
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #00a7d3
+}
+a:hover {
+    color: #0067a6
+}
+@font-face {
+    font-family: hobo;
+    src: url(/wikestudy/dist/font/segoesc.ttf);
+    font-style: italic
+}
+@font-face {
+    font-family: seg;
+    src: url(/wikestudy/dist/font/segoesc.ttf);
+    font-style: italic
+}
+.guide_message {
+    font-size: 16px;
+    text-align: center!important;
+    padding-top: 10px
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right
+}
+img {
+    border: 0
+}
+button,input,select,textarea {
+    border-radius: 3px;
+    font-size: 100%
+}
+textarea {
+    resize: none
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+html {
+    overflow-y: scroll
+}
+
+.outside {
+    width: 100%;
+    min-width: 1024px;
+    background: #f6f7fb;
+    padding: 1px
+}
+.wrapper {
+    width: 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+button {
+    cursor: pointer;
+    border: 0;
+    color: white;
+}
+label {
+    cursor: pointer
+}
+.center {
+    text-align: center
+}
+.hidden_textarea {
+    display: none
+}
+.show_textarea {
+    display: block;
+    margin: 15px auto
+}
+.illegal {
+    color: red!important
+}
+.login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: 2px solid #00abd8!important
+}
+#nav {
+    padding: 0;
+    height: 70px;
+    background: #2b2b33;
+    overflow: hidden;
+    color: white
+}
+#nav a {
+    float: left;
+    color: white;
+    line-height: 70px;
+    background: #2b2b33
+}
+#nav div {
+    overflow: hidden;
+    background: #2b2b33
+}
+
+#nav a#nav_logo img {
+    background: #2b2b33;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle
+}
+
+#nav ul {
+    float: left;
+    margin-left: 15px;
+    background: #2b2b33;
+    overflow: hidden
+}
+
+#nav li {
+    float: left
+}
+
+#nav li a {
+    padding: 0 30px
+}
+
+#nav li a:hover {
+    background: #00abd7
+}
+
+#nav form {
+    float: right;
+    margin: 18px 0;
+    padding: 5px;
+    vertical-align: middle;
+    border-radius: 20px;
+    background: white
+}
+
+#nav input {
+    height: 20px;
+    border: 0;
+    text-indent: 5px;
+    background: white;
+    vertical-align: middle;
+    color: #aaa;
+    outline: 0;
+    font-weight: lighter;
+    font-size: 12px
+}
+
+#search {
+    height: 20px;
+    width: 20px;
+    font-size: 16px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: url(/wikestudy/dist/images/common/magnifyingglass.png) no-repeat
+}
+
+#user {
+    display: inline;
+    float: right;
+    padding: 0 10px;
+    width: 190px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    height: 70px;
+    color: #535353
+}
+
+#user a {
+    display: inline;
+    float: right;
+    line-height: 70px
+}
+
+#user_name {
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center
+}
+
+#user a:hover {
+    color: #00abd7
+}
+
+#footer {
+    padding-bottom: 0;
+    clear: both;
+    background: #2b2b33 left top
+}
+
+#footer .wrapper {
+    background: #2b2b33
+}
+
+#foot_href {
+    overflow: hidden
+}
+
+#foot_href img {
+    float: left;
+    width: 200px
+}
+
+#foot_href div {
+    display: block;
+    width: 30%;
+    margin: 0 15px 20px;
+    float: right
+}
+
+#foot_href h3 {
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #b4bbbf;
+    text-align: left
+}
+
+#foot_href a {
+    color: #b4bbbf
+}
+
+#footer a:hover {
+    color: #00abd8;
+}
+
+#foot_href p {
+    color: #b4bbbf
+}
+
+#foot_intro {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #b4bbbf;
+    border-bottom: 1px solid #b4bbbf;
+    margin: 0 auto 10px
+}
+
+#foot_intro a {
+    display: inline;
+    padding: 0 20px;
+    line-height: 60px
+}
+
+#foot_copy {
+    color: #b4bbbf;
+    text-align: center;
+    line-height: 40px
+}
+
+.out_pad {
+    padding: 70px 0 0;
+    width: 1002px
+}
+
+#page {
+    clear: both;
+    margin: 30px auto;
+    text-align: center;
+    min-width: 300px;
+    position: relative;
+    padding: 20px 0
+}
+
+#page a,
+#page span {
+    padding: 4px 9px;
+    color: #787d81;
+    margin: 0 5px;
+    width: 30px
+}
+
+#page a#previousPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: white;
+    border-right: 15px solid #b2babd;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#nextPage {
+    width: 0;
+    height: 0;
+    padding: 0;
+    color: #00abd7;
+    border-bottom: 13px solid #f6f7fb;
+    border-top: 13px solid #f6f7fb;
+    border-left: 15px solid #b2babd;
+    border-right: 0 solid #f6f7fb;
+    line-height: 0;
+    font-size: 0;
+    position: relative;
+    top: -5px
+}
+
+#page a#previousPage:hover {
+    border-right: 15px solid #00abd7
+}
+
+#page a#nextPage:hover {
+    border-left: 15px solid #00abd7
+}
+
+#page a.selected {
+    background: #00abd7;
+    color: white
+}
+
+#page a:hover {
+    background: #eee
+}
+
+.illegal {
+    color: red!important
+}
+
+#class_cata {
+    margin-bottom: 40px;
+    width: 1002px
+}
+
+#study_class {
+    background: url(/wikestudy/dist/images/common/backgroundLine_23.png) #00abd8 left bottom
+}
+
+#study_class h1 {
+    background: url(/wikestudy/dist/images/common/homepage_v2.png) no-repeat 0 5px;
+    padding: 19px 0;
+    line-height: 19px;
+    margin: 30px auto;
+    width: 900px;
+    text-align: center;
+    color: white
+}
+
+#study_temp {
+    width: 1002px
+}
+
+#study_class div#class_cata {
+    width: 100%;
+    background: white;
+}
+
+#study_class div#class_cata div#cou_main {
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    background: white;
+    overflow: hidden;
+}
+
+.one_course {
+    float: left;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    width: 22%;
+    padding: 1%;
+    overflow: hidden;
+    margin: 1px 1% 13px 0;
+    border: 1px solid #e5e5e7;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
+}
+
+.one_course:hover {
+    position: relative;
+    top: -1px;
+    left: -1px;
+    box-shadow: 3px 3px 20px #DDD
+}
+
+.no_mr {
+    margin-right: 0
+}
+
+.one_course a {
+    display: block;
+    width: 100%;
+    height: 130px;
+    vertical-align: middle;
+    line-height: 0
+}
+
+.one_course img,
+.oneClass img,
+.oneSoftware img {
+    width: 100%;
+    min-height: 105px;
+    max-height: 130px
+}
+
+div.qu {
+    margin-right: 0
+}
+
+div.one_course h3 {
+    margin: 5px 0;
+    color: #666;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#class_cata div h3 a {
+    padding: 0;
+    font-weight: normal;
+    color: #3a3a3a;
+    margin: 5px 0
+}
+
+.one_course p {
+    color: #666;
+    overflow: hidden;
+    text-align: left;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px
+}
+
+#class_cata div span {
+    color: #3a3a3a;
+    margin-right: 10px
+}
+
+#study_class #class_cata .one_course div.clear {
+    text-align: left
+}
+
+#class_cata a.more {
+    color: #0167a7;
+    display: block;
+    width: 100%;
+    clear: both;
+    margin: 10px 0;
+    text-align: right
+}
+
+#stu_star {
+    min-height: 540px;
+    background: url(/wikestudy/dist/images/common/backgroundLine_23.png) #fde25d left top
+}
+
+#stu_star h1 {
+    background: url(/wikestudy/dist/images/common/homepage_v2.png) no-repeat 0 -72px;
+    padding: 19px 0;
+    line-height: 19px;
+    margin: 30px auto;
+    width: 900px;
+    text-align: center;
+    color: white
+}
+
+#star_con {
+    width: 970px;
+    padding: 0 16px 118px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto
+}
+
+div#starLimg {
+    background: url(/wikestudy/dist/images/common/homepage_v2.png) no-repeat -992px 0;
+    position: absolute;
+    width: 87px;
+    height: 403px;
+    top: 0;
+    left: 0;
+    cursor: pointer
+}
+
+div#starRimg {
+    position: absolute;
+    width: 87px;
+    height: 403px;
+    right: 0;
+    top: 0;
+    background: url(/wikestudy/dist/images/common/homepage_v2.png) no-repeat -1114px 0;
+    cursor: pointer;
+}
+
+#star_main_con {
+    position: relative;
+    top: 50px;
+    padding: 50px 46px;
+    height: 220px;
+    text-align: center;
+    margin: 0 20px 30px;
+    background: #fff0b9
+}
+
+.stu {
+    text-align: center;
+    width: 157px;
+    margin: 0 5px 50px;
+    float: left
+}
+
+.stu a {
+    display: block;
+    padding: 10px
+}
+
+#star_con .stu img:hover {
+    border: 5px solid #efc028
+}
+
+.stu p {
+    color: #787d82;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#star_con .stu img {
+    width: 90%;
+    -webkit-transition: border 1s;
+    -moz-transition: border 1s;
+    -ms-transition: border 1s;
+    -o-transition: border 1s;
+    transition: border 1s;
+    border: 5px solid #fff0b9;
+    border-radius: 100%
+}
+
+.stu p {
+    margin: 20px 10px;
+    clear: both;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+#section1,
+#section2 {
+    position: absolute
+}
+
+#course_headA {
+    border-top: 30px solid #00abd8;
+    border-bottom: 30px solid #00abd8;
+    margin: 50px auto;
+    width: 680px;
+    height: 0;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#course_headB {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background: #00abd8;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 7px solid #f6f7fb;
+    font-weight: bold
+}
+
+#course_headC {
+    background: #f6f7fb;
+    height: 10px;
+    width: 500px;
+    margin: 0 auto
+}
+
+#course_headD {
+    position: relative;
+    top: -30px
+}
+
+#select_sort {
+    overflow: hidden;
+    margin: 30px 0 10px
+}
+
+#select_sort a {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    float: right;
+    width: 3em;
+    height: 3em;
+    line-height: 3em;
+    border-radius: 100%;
+    color: #434446
+}
+
+#select_sort a#selected {
+    background: #0067a6;
+    color: white
+}
+
+#select_sort a.selected {
+    background: #008972;
+    color: white
+}
+
+#select_sort a.selected:hover {
+    background: #008972;
+    color: white
+}
+
+#select_sort a:hover {
+    background: #cecece
+}
+
+#data_headA {
+    border-top: 30px solid #1abc9c;
+    border-bottom: 30px solid #1abc9c;
+    margin: 50px auto;
+    width: 680px;
+    height: 0;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#data_headD {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background: #1abc9c;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 7px solid #f6f7fb;
+    font-weight: bold
+}
+
+#data_headC {
+    background: #f6f7fb;
+    height: 10px;
+    width: 500px;
+    margin: 0 auto
+}
+
+#data_headB {
+    position: relative;
+    top: -30px
+}
+
+#data_lable {
+    border-bottom: 6px solid #1abc9c;
+    border-top: 6px solid #1abc9c
+}
+
+#data_type {
+    border-bottom: 1px solid #787d82;
+    overflow: hidden
+}
+
+#data_grade {
+    overflow: hidden
+}
+
+#data_type div,
+#data_grade div {
+    overflow: hidden;
+    padding: 20px 0
+}
+
+#data_type a:hover,
+#data_grade a:hover {
+    background: #cecece
+}
+
+#data_type a,
+#data_grade a {
+    padding: 5px 10px;
+    color: #787d82;
+    margin: 5px;
+    float: left
+}
+
+#data_lable span {
+    float: left;
+    margin: 30px 10px 0
+}
+
+#data_lable a.selected {
+    background-color: #008972;
+    color: white;
+    border-radius: 3px
+}
+
+#data_com {
+    overflow: hidden;
+    margin-bottom: 30px
+}
+
+.one_data {
+    width: 17%;
+    float: left;
+    margin: 5px 1% 5px 0;
+    padding: .9%;
+    border: 1px solid #bebcbd
+}
+
+.one_data:hover {
+    position: relative;
+    top: -1px;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    box-shadow: 5px 5px 20px #bebcbd;
+    border: 1px solid #bebcbd
+}
+
+.one_data a {
+    display: block
+}
+
+div.no_pr {
+    margin-right: 0
+}
+
+.one_data img {
+    width: 100%
+}
+
+.one_data h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+#media_header {
+    width: 100%;
+    min-width: 1002px;
+    height: 55px;
+    background: #f6f7fb
+}
+
+#media_header h4 {
+    float: left;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 55px
+}
+
+#media_header button {
+    float: left;
+    background: url('/wikestudy/dist/images/common/all.png') white no-repeat -189px 0;
+    margin: 10px 30px;
+    width: 40px;
+    height: 40px;
+    border: 0
+}
+
+#media_header #couName {
+    fonvt-size: 12px;
+    color: #787d82
+}
+
+#wrapper {
+    width: 100%;
+    min-width: 1002px;
+    overflow: hidden
+}
+
+#wrapper #video {
+    margin: 0 19em 0 0;
+    padding: 0;
+    height: 600px
+}
+
+#list_section {
+    min-height: 600px;
+    background: #f6f7fb;
+    width: 19em;
+    float: right
+}
+
+#video_list {
+    float: right;
+    width: 3em;
+    margin: 0 auto -3000px;
+    padding-bottom: 3000px;
+    background: #2b2b33
+}
+
+#video_list li:hover {
+    margin-left: -1em
+}
+
+#video_list button {
+    background: #2b2b33;
+    color: white;
+    border: 0;
+    padding: .5em;
+    margin: 9px auto
+}
+
+#video_list a {
+    display: block;
+    background: #2b2b33;
+    color: white;
+    width: 2em;
+    padding: .5em
+}
+
+#video object {
+    width: 100%;
+    height: 600px
+}
+
+#reply_list,
+#note_list,
+#topic_list,
+#data_list {
+    display: none;
+    float: left;
+    width: 95%;
+    margin: 2%
+}
+
+#cha_list {
+    display: block
+}
+
+#list {
+    display: block;
+    width: 16em;
+    height: 598px;
+    border-top: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    float: left;
+    overflow-y: auto
+}
+
+#list textarea {
+    width: 100%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 70px
+}
+
+#list button {
+    float: right;
+    color: white;
+    padding: 5px 10px;
+    background: #00abd7;
+    border: 0;
+    border-radius: 5px
+}
+
+#list button:hover {
+    background: #0067a6;
+    z-index: 2
+}
+
+.cou_chapter {
+    margin: 1em
+}
+
+.cou_chapter h4 {
+    color: #59595b;
+    font-weight: bold
+}
+
+.cou_section {
+    margin-left: .3em
+}
+
+.cou_section a {
+    color: #59595b;
+    display: block;
+    width: 94%;
+    padding: .3em 3%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.cou_section a:hover {
+    color: #02a5ce;
+    cursor: pointer;
+    background: #e5eff1
+}
+
+.clear_float {
+    overflow: hidden
+}
+
+#topic_headA {
+    border-top: 30px solid #f2572d;
+    border-bottom: 30px solid #f2572d;
+    margin: 50px auto;
+    width: 680px;
+    height: 0;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#topic_headD {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background: #f2572d;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 7px solid #f6f7fb;
+    font-weight: bold
+}
+
+#topic_headC {
+    background: #f6f7fb;
+    height: 10px;
+    width: 500px;
+    margin: 0 auto
+}
+
+#topic_headB {
+    position: relative;
+    top: -30px
+}
+
+#topiclist,
+#add_topic {
+    margin-right: 280px;
+    margin-bottom: 60px
+}
+
+#topic_area {
+    min-height: 400px
+}
+
+#topic_nav {
+    overflow: hidden
+}
+
+#topic_nav ul {
+    float: left
+}
+
+#topic_nav ul li {
+    float: left;
+    margin: 0
+}
+
+#topic_nav a {
+    float: left;
+    
+    margin: 0;
+    padding: 15px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #666;
+    font-size: 18px
+}
+
+#topic_nav .selected {
+    border-bottom: 3px solid #f2572d;
+    background: #ff7d48;
+    float: left;
+    color: white
+}
+
+#topic_nav a:hover {
+    background: #ddd;
+    border-bottom: 3px solid;
+}
+
+#topic_nav .selected:hover {
+    border-bottom: 3px solid #f2572d;
+    background: #ff7d48;
+    cursor: pointer;
+}
+
+#topic_nav .add_topic {
+    border-bottom: 3px solid #f2572d;
+    background-color: #ff7d48;
+    float: right;
+    color: white;
+    transition: background-color 0.5s;
+}
+
+#topic_nav .add_topic:hover {
+    background-color: #f2572d;
+    border-bottom: 3px solid #f2572d;
+}
+
+#topic_nav .add_topic span {
+    font-weight: bold
+}
+
+#list_content {
+    padding: 20px;
+    background: white;
+    margin: 10px 0;
+    border-radius: 10px
+}
+
+.one_topic h3 {
+    margin-bottom: 0;
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.one_topic h3 a {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+.one_topic {
+    min-height: 1%;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0;
+    overflow: hidden
+}
+
+.one_topic .writer {
+    float: left;
+    width: 60px;
+    margin: 20px 30px 10px 10px;
+    text-align: center
+}
+
+.one_topic .content_main .hot {
+    font-family: cursive;
+    color: #f2572d;
+    font-style: italic
+}
+
+.one_topic .writer img {
+    width: 100%;
+    border-radius: 100%
+}
+
+.one_topic .writer p a {
+    font-size: 16px;
+    color: #666;
+    line-height: 16px;
+    text-align: center
+}
+
+.one_topic .content_main {
+    margin: 20px 0 5px 100px;
+    overflow: hidden
+}
+
+.one_topic .content_main p {
+    color: #535353;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.one_topic .content_main div {
+    float: left;
+    width: 407px;
+    padding-bottom: 20px;
+    padding-top: 7px;
+}
+
+.one_topic .content_main img{
+    width: 100px;
+}
+
+
+.one_topic .content_main div span {
+    font-size: 14px;
+    color: #808488;
+    margin: 0 5px
+}
+
+.one_topic .content_main div span.labels a {
+    color: #808488
+}
+
+.one_topic .content_main .answer {
+    font-size: 14px;
+    color: #808488;
+    margin: 0 5px
+}
+
+.one_topic .content_main .tips {
+    border: 1px solid #12b1db;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #a0a3a6;
+    padding: 0 3px
+}
+
+.one_topic .look_num:hover,
+.one_topic .ans_num:hover {
+    text-decoration: underline
+}
+
+.one_topic .look {
+    margin: 0 15px 0 25px;
+    color: #787d82;
+    font-size: 14px;
+    vertical-align: middle
+}
+
+.one_topic .look_num {
+    float: right;
+    /*min-width: 80px;*/
+    background: url(/wikestudy/dist/images/common/watch.png) no-repeat left center
+}
+
+.one_topic .ans_num {
+    float: right;
+    min-width: 80px;
+    background: url(/wikestudy/dist/images/common/2.png) no-repeat left center
+}
+
+#topic_side {
+    width: 260px;
+    float: right;
+    overflow: hidden
+}
+
+#side_nav,
+#side_form,
+#side_label {
+    border-radius: 10px;
+    margin: 0 0 20px;
+    background: white
+}
+
+#side_nav div div {
+    height: 150px;
+    text-align: center;
+    line-height: 225px;
+    vertical-align: middle
+}
+
+#side_nav img {
+    border-radius: 50px;
+    width: 80px;
+    height: 80px
+}
+
+#side_nav table {
+    width: 260px;
+    background: #e2e6ef;
+    border-radius: 0px 0px 20px 20px;
+}
+
+#side_nav td a {
+    background: #e2e6ef;
+    display: block;
+    width: 56px;
+    color: #666;
+    text-decoration: none;
+    padding: 15px 15px;
+    border-bottom: 5px solid #e2e6ef
+}
+
+a#side_nav_first {
+    border-radius: 0 0 0 10px
+}
+
+a#side_nav_last {
+    border-radius: 0 0 10px 0
+}
+
+#side_nav td a.select {
+    background: #00a7d3;
+    color: white;
+    text-decoration: none;
+    border-bottom: 5px solid #005d9c
+}
+
+#side_nav td a:hover {
+    background: #00a7d3;
+    color: white;
+    text-decoration: none;
+    border-bottom: 5px solid #005d9c
+}
+
+#side_form {
+    background: #eae9e9;
+    border-radius: 10px;
+    position: relative;
+    color: #666
+}
+
+#side_form input {
+    border: 0;
+    color: #666;
+    border-radius: 10px;
+    background: transparent;
+    padding: 10px;
+    outline: none;
+}
+
+#side_form button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    background: url(/wikestudy/dist/images/common/magnifyingglass.png) no-repeat center center
+}
+
+#side_label {
+    border-radius: 10px;
+    background: white;
+    overflow: hidden;
+    padding: 20px
+}
+
+#side_label h1 {
+    color: #666;
+    border-bottom: 1px solid #666
+}
+
+#side_label #label_main {
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+#side_label a {
+    padding: 3px 7px 3px 8px;
+    font-size: 12px;
+    float: left;
+    color: white;
+    border-radius: 3px;
+    margin: 5px 3px 5px 3px;
+    background: #00a7d3
+}
+
+#side_label a:hover {
+    text-decoration: none;
+    background: #005d9c
+}
+
+#side_label form {
+    float: left
+}
+
+#side_label form input {
+    background: #b4bbbf;
+    border: 0;
+    padding: 6px;
+    border-radius: 5px;
+    text-indent: 5px;
+    font-size: 12px
+}
+
+#side_label form button {
+    width: 25px;
+    height: 25px;
+    padding: 0 8px;
+    border-radius: 3px;
+    background: url(/wikestudy/dist/images/common/magnifyingglass.png) #b4bbbf no-repeat center center
+}
+
+#add_topic {
+    overflow: hidden
+}
+
+#add_topic h1 {
+    height: 78px;
+    line-height: 78px;
+    font-size: 24px;
+    font-weight: normal
+}
+
+#add_topic ul {
+    width: 100%
+}
+
+#add_topic li {
+    margin: 15px 0;
+    width: 100%;
+}
+
+#add_topic li label {
+    width: 50px;
+    display: block;
+    margin: 10px 0 5px;
+    vertical-align: top;
+}
+
+#add_topic select {
+    padding: 3px 10px;
+    border-radius: 3px;
+    margin: 0;
+    display: block;
+    width: 100%;
+}
+
+#add_topic input {
+    width: calc( 100% - 8px);
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    padding: 5px 3px;
+}
+
+/*#add_topic textarea {
+    width: 99%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 3px;
+    height: 200px
+}*/
+
+#add_topic button {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 10px 70px;
+    display: block;
+    float: right;
+    margin: 10px 0 10px 20px
+}
+
+#add_topic button:hover,
+#search:hover,
+#column form#mana_upda button:hover,
+#star_selected button:hover,
+#star_no_selected #set_top:hover,
+#column form#up_password button:hover {
+    background-color: #008972
+}
+
+#wrapper {
+    padding: 50px 0;
+    width: 70%;
+    min-width: 1000px;
+    text-align: left;
+    margin: 0 auto
+}
+
+#list_content h2 {
+    font-size: 25px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0
+}
+
+#topic_detail {
+    padding: 30px 40px;
+    margin-right: 280px;
+    margin-bottom: 60px;
+    background: white;
+    border-radius: 10px
+}
+
+#topic_det_main h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: normal
+}
+
+.topic_intro {
+    margin-left: 60px;
+    /*font-size: 14px;*/
+    min-height: 50px;
+    overflow: hidden
+}
+
+.topic_intro p {
+    font-size: 16px
+}
+
+.topic_intro span.time {
+    margin: 0 10px 0 0
+}
+
+.topic_intro input {
+    padding: 3px 18px;
+    margin: 0 20px;
+    color: white;
+    border: 0;
+    float: right;
+    background: #00a7d3;
+    border-radius: 5px
+}
+
+.topic_intro input:hover {
+    background: #0067a6;
+    cursor: pointer
+}
+
+#topic_det_main p#topic_con {
+    margin: 20px 0 0 0;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#main_reply {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa;
+    overflow: hidden
+}
+
+#main_reply textarea {
+    border: 1px solid #aaa;
+    width: 99.7%;
+    height: 98px;
+    margin: 2px 0 11px;
+}
+
+#main_reply button {
+    float: right;
+    padding: 5px 20px;
+    margin: 0;
+        margin-top: 10px;
+    background: #00a7d3;
+    border-radius: 3px
+}
+
+a.topic_pho {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px
+}
+
+a.topic_pho img {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%
+}
+
+.topic_reply_area {
+    padding: 10px 0;
+    border-bottom: 1px solid #aaa
+}
+
+.topic_reply_area form.reply_sec {
+    margin-left: 70px
+}
+
+.topic_reply,
+.replay_form {
+    float: right;
+    padding: 3px 13px;
+    margin: 0;
+    border: 0;
+    background: white;
+    color: #00a7d3;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+.topic_reply:hover,
+.replay_form:hover {
+    color: #005d9c
+}
+
+.topic_reply_sub {
+    float: right;
+    padding: 3px 13px;
+    margin: 10px 0;
+    border: 0;
+    background: #00a7d3;
+}
+
+#main_reply .topic_reply_sub:hover {
+    background: #005d9c
+}
+
+.topic_reply_area form {
+    overflow: hidden;
+    margin: 5px 0
+}
+
+.topic_reply_area p {
+    margin-right: 60px;
+    line-height: 2em;
+}
+
+.hidden_textarea,
+.show_textarea {
+    margin: 20px 20px 5px 0px;
+    overflow: hidden
+}
+
+.hidden_textarea textarea,
+.show_textarea textarea {
+    width: 94.9%;
+    height: 100px;
+    padding: 1%;
+}
+
+#my_ans {
+    overflow: hidden;
+    padding: 20px;
+    min-height: 450px;
+    margin-right: 280px;
+    background: white
+}
+
+.one_com {
+    padding: 10px 0;
+    min-height: 55px;
+    border-bottom: 1px solid #aaa
+}
+
+.one_com .a_img {
+    display: block;
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-right: 20px
+}
+
+.one_com .a_img img {
+    width: 100%;
+    border-radius: 100%
+}
+
+.one_com form {
+    margin: 0 0 5px 75px;
+    
+    font-size: 18px
+}
+.one_com h3{
+	font-weight: normal;
+	color: #444;
+}
+
+.one_com h3 a{
+	color: #444;
+}
+
+.one_com span {
+    margin: 0 10px 10px 0;
+    color: #aaa;
+    font-size: 12px
+}
+
+.one_com button,
+.content_main button {
+    margin: 0 20px;
+    padding: 3px 18px;
+    font-size: 12px;
+    float: right;
+    background: #00a7d3;
+    color: white;
+    border-radius: 3px
+}
+
+.one_com button:hover,
+.content_main button:hover {
+    background: #0067a6
+}
+
+.one_com_data {
+    display: none
+}
+
+.show_textarea .reply_form {
+    float: right;
+    margin: 10px 20px 5px
+}
+
+#course_headA {
+    border-top: 30px solid #00abd8;
+    border-bottom: 30px solid #00abd8;
+    margin: 50px auto;
+    width: 680px;
+    height: 0;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#course_headB {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background: #00abd8;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 7px solid #f6f7fb;
+    font-weight: bold
+}
+
+#course_headC {
+    background: #f6f7fb;
+    height: 10px;
+    width: 500px;
+    margin: 0 auto
+}
+
+#course_headD {
+    position: relative;
+    top: -30px
+}
+
+#course_label {
+    display: block;
+    border-bottom: 5px solid #00abd8;
+    border-top: 5px solid #00abd8;
+    overflow: hidden
+}
+
+#course_type {
+    border-bottom: 1px solid #787d82;
+    overflow: hidden
+}
+
+#course_grade {
+    overflow: hidden
+}
+
+#course_type div,
+#course_grade div {
+    overflow: hidden;
+    padding: 20px 0
+}
+
+#course_type a,
+#course_grade a {
+    padding: 5px 10px;
+    color: #787d82;
+    margin: 5px;
+    float: left
+}
+
+#course_label span {
+    float: left;
+    margin: 30px 10px 0
+}
+
+#course_type a:hover,
+#course_grade a:hover {
+    background: #cecece
+}
+
+#course_type a.selected,
+#course_grade a.selected {
+    background: #00abd7;
+    color: white;
+    border-radius: 3px
+}
+
+#course_com {
+    overflow: hidden;
+    margin-bottom: 30px;
+    min-height: 400px;
+    text-align: left;
+
+}
+
+#selectHeader {
+    overflow: hidden;
+    margin: 15px auto
+}
+
+#selectHeader div {
+    width: 0;
+    height: 0;
+    border-left: 40px solid transparent;
+    border-bottom: 20px solid #b3bbbe
+}
+
+#selectHeader h1 {
+    font-size: 16px;
+    margin: 5px auto;
+    display: inline;
+    color: white;
+    position: relative;
+    float: left;
+    font-weight: normal;
+    padding: 10px 6px 10px 40px;
+    background: #b3bbbe
+}
+
+#selectHeader span {
+    border-top: 21px solid #b3bbbe;
+    border-bottom: 20px solid #b3bbbe;
+    border-left: 24px solid #b3bbbe;
+    position: absolute;
+    top: 0;
+    border-right: 27px solid #f6f7fb;
+    width: 0;
+    height: 0;
+    font-size: 0
+}
+
+#intro {
+    background: white;
+    border-radius: 10px;
+    padding: 30px 45px;
+    margin: 15px auto;
+    overflow: hidden
+}
+
+#intro_img {
+    width: 40%;
+    float: left;
+    margin-right: 3%
+}
+
+#intro_main {
+    margin-left: 43%;
+    position: relative
+}
+
+#intro_main h3 {
+    font-size: 18px;
+    color: #686868;
+    margin: 0 0 8px;
+}
+
+#intro_main span {
+    font-size: 12px;
+    color: #7c7c7c
+}
+
+.play {
+    background: url(/wikestudy/dist/images/common/rounded.png) no-repeat left center
+}
+
+#intro_main p {
+    font-size: 16px;
+    color: #686868;
+    height: 50px;
+    margin: 20px 0;
+    min-height: 4em
+}
+
+#intro_main .button {
+    display: block;
+    width: 60px;
+    margin: 20px 0 10px;
+    border: 0;
+    border-bottom: 3px solid #0068a7;
+    padding: 10px 20px;
+    background: #00a7d3;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none
+}
+
+#intro_main .button:hover{
+    background-color: #0068a7;
+}
+
+#coursemain {
+    background: white;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border-radius: 10px
+}
+
+#coursemain_list {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    border-bottom: 2px solid #ccd3d9
+}
+
+#coursemain_list a {
+    float: left;
+    padding: 20px 30px 20px 0;
+    font-size: 20px;
+    color: #626262
+}
+
+#coursemain_list li.selected a {
+    color: #00a6d0
+}
+
+#tea_mess {
+    width: 20%;
+    float: right;
+    margin-left: 10px
+}
+
+#tea_mess h4 {
+    font-size: 18px;
+    color: #686868;
+    margin-bottom: 10px
+}
+
+#tea_mess img {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 100%
+}
+
+#coursemain_content {
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 450px
+}
+
+#coursemain_content img {
+    width: 30px;
+    height: 30px
+}
+
+#coursemain_content button {
+    padding: 5px 30px;
+    background: #1abc9c
+}
+
+#coursemain_content button:hover {
+    background: #008972
+}
+
+.one_content {
+    position: relative;
+    margin: 0;
+    width: 100%;
+    float: left
+}
+
+#coursemain_content .one_content img {
+    position: absolute;
+    width: auto;
+    height: auto;
+    top: 0;
+    left: 0
+}
+
+.clear {
+    overflow: hidden
+}
+
+.one_content ul {
+    padding: 20px 30px 20px 20px;
+    width: 100%;
+    margin: -3px 0 0;
+    margin-left: 8px;
+    border-left: 7px solid #ccd4d9;
+    list-style: none
+}
+
+.one_content strong {
+    padding-left: 20px
+}
+
+.one_content ul.lastContent {
+    border-left: 7px solid transparent
+}
+
+.one_content h3 {
+    font-size: 20px;
+    color: #616161;
+    margin: 0;
+    font-weight: normal
+}
+
+.one_content li:hover {
+    background: #eee
+}
+
+.one_content li:hover a {
+    color: #04a9d4;
+    background: url(/wikestudy/dist/images/common/play_blue.png) #eee no-repeat 40px center
+}
+
+.one_content a {
+    width: 100%;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding: 2px;
+    line-height: 40px;
+    padding-left: 60px;
+    color: #686868
+}
+.one_content a:before{
+    background: url(/wikestudy/dist/images/common/all.png) no-repeat 0px -214px;
+    content: '';
+    width: 20px;
+    display: block;
+    height: 20px;
+    margin: 10px 0 10px 0px;
+    position: relative;
+    float: left;
+    left: -19px;
+}
+.one_content li:hover a:before{
+    background: url(/wikestudy/dist/images/common/play_blue.png) no-repeat  40px center;
+}
+#coursemain_question {
+    min-height: 885px
+}
+
+.oneQuestion {
+    border-bottom: 1px solid #ccd3d9;
+    overflow: hidden
+}
+
+.question_userImg {
+    float: left;
+    margin: 25px 10px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50px
+}
+
+.oneQuestion_main {
+    margin: 30px 0 20px 10px;
+    float: left;
+    overflow: hidden
+}
+
+.oneQuestion .name {
+    font-size: 16px;
+    color: #444;
+    margin-right: 20px
+}
+
+.oneQuestion .time {
+    font-size: 12px;
+    color: #b4bcbe
+}
+
+.oneQuestion .content {
+    font-size: 16px;
+    color: #444;
+    height: 60px
+}
+
+.from {
+    font-size: 14px;
+    color: #444
+}
+
+.from span {
+    padding: 3px 3px 3px 25px;
+    color: #444;
+    background: url(/wikestudy/dist/images/common/play.png) no-repeat left center
+}
+
+.no_p {
+    margin: 30px auto;
+    text-align: center
+}
+
+#cou_com li {
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0
+}
+
+.per_pho {
+    display: block;
+    float: left
+}
+
+.time {
+    color: #bbb;
+    font-size: 12px;
+    margin: 0 10px
+}
+
+.per_main {
+    margin-left: 60px
+}
+
+.per_pho img {
+    width: 40px;
+    height: 40px
+}
+
+.per_main p {
+    margin: 7px 0
+}
+
+.one_content a.temp_a {
+    line-height: 1em;
+    padding: 0;
+    display: inline
+}
+
+#coursemain_content table {
+    width: 100%
+}
+
+#coursemain_content table {
+    border-spacing: 20px;
+    margin: 0 auto;
+    border-collapse: separate
+}
+
+#coursemain_content td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+#art_heading_a {
+    border-top: 30px solid #008972;
+    border-bottom: 30px solid #008972;
+    margin: 50px auto;
+    width: 680px;
+    height: 0;
+    border-left: 70px solid #f6f7fb;
+    border-right: 70px solid #f6f7fb
+}
+
+#art_heading_b {
+    width: 470px;
+    margin: 0 auto;
+    padding: 10px 50px;
+    background: #008972;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    border: 7px solid #f6f7fb;
+    font-weight: bold
+}
+
+#art_heading_c {
+    background: #f6f7fb;
+    height: 10px;
+    width: 500px;
+    margin: 0 auto
+}
+
+#art_heading_d {
+    position: relative;
+    top: -30px
+}
+
+#art_com {
+    background: #f6f7fb;
+    margin: 0 auto 30px;
+    padding: 0 0 70px 0
+}
+
+#art_type {
+    height: 50px;
+    line-height: 50px;
+    background: #008972;
+    overflow: hidden
+}
+
+#art_type a {
+    color: white;
+    padding: 0 20px;
+    float: left;
+    font-weight: bold
+}
+
+#art_type a.selected {
+    background: #efc028;
+    border-top: 5px solid #efc028;
+    border-bottom: 5px solid #c79f23;
+    line-height: 40px
+}
+
+#art_type form {
+    background: #53a096;
+    max-width: 250px;
+    min-width: 200px;
+    float: right;
+    height: 50px;
+    overflow: hidden
+}
+
+#art_type input {
+    text-indent: 10px;
+    background: #53a096;
+    border: 0;
+    float: left;
+    color: white;
+    margin: 12px 0;
+    height: 26px;
+    outline: none;
+}
+
+#art_type button {
+    float: right;
+    cursor: pointer;
+    background: url(/wikestudy/dist/images/common/whitesearch.png) #53a096 no-repeat center;
+    width: 30px;
+    height: 50px;
+    border: 0;
+    padding: 0 5px;
+    margin-right: 5px
+}
+
+#art_main {
+    overflow: hidden
+}
+
+.oneArticle {
+    background: white;
+    display: block;
+    width: 45%;
+    padding: 0 15px;
+    margin: 2% 0 0;
+    color: #616161
+}
+
+.oneArticle h4 {
+    margin: 15px 0;
+    font-size: 16px
+}
+
+.oneArticle h4 a {
+    color: #7a7a7a;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.oneArticle .time,
+.oneArticle .look {
+    color: #b6bbbe;
+    margin: 0;
+    padding-bottom: 5px
+}
+
+.oneArticle span {
+    font-size: 14px
+}
+
+.oneArticle h3 {
+    color: #929292
+}
+
+.oneArticle .look {
+    margin-left: 30px
+}
+
+.oneArticle .look img {
+    vertical-align: middle
+}
+
+.answerLZ {
+    cursor: pointer;
+    color: #23a76c
+}
+
+.showReply,
+.hideReply {
+    cursor: pointer;
+    color: #23a76c
+}
+
+.hideReply {
+    display: none
+}
+
+.answer .button {
+    float: left
+}
+
+#article_main {
+    width: 1000px;
+    margin: 10px auto;
+    text-align: left;
+    position: relative;
+    padding: 20px
+}
+
+#uuu {
+    display: block
+}
+
+#sh {
+    float: right;
+    display: inline
+}
+
+#article h1 {
+    font-size: 34px;
+    text-align: center;
+    font-weight: normal;
+    padding: 10px 0
+}
+
+#articleMes {
+    text-align: center
+}
+
+#article span {
+    color: #a9a9b1;
+    margin-right: 20px;
+    font-size: 14px
+}
+
+#article_con {
+    margin: 20px auto;
+    padding: 20px;
+    min-height: 400px;
+    font-size: 16px;
+    line-height: 25px;
+    background: white;
+}
+
+#myForm {
+    margin: 20px auto
+}
+
+.oneComment {
+    overflow: hidden;
+    clear: both;
+    padding: 10px 0 0 10px;
+    border-top: 1px solid #acacac
+}
+
+.oneComment img {
+    width: 40px;
+    height: 40px;
+    display: block
+}
+
+.headPortrait {
+    width: 60px;
+    float: left
+}
+
+.commentArea {
+    padding: 20px;
+    margin-left: 65px
+}
+
+.commentMain {
+    position: relative;
+    overflow: hidden
+}
+
+.commentCon {
+    float: left
+}
+
+.oneReply {
+    width: 800px;
+    float: right;
+    position: relative;
+    padding: 10px 0;
+    border-bottom: 1px dotted #666
+}
+
+.reply {
+    overflow: hidden;
+    float: right;
+    padding: 40px;
+    background: #f7f8fa;
+    display: none
+}
+
+.replyCon {
+    float: left
+}
+
+.other {
+    font-size: 14px;
+    color: #a9a9b1;
+    clear: both;
+    float: right;
+    margin: 5px
+}
+
+.answer {
+    overflow: hidden;
+    clear: both;
+    margin: 10px;
+    width: 780px;
+    float: right
+}
+
+.answer span {
+    float: right
+}
+
+textarea.answerCon {
+    margin: 20px auto;
+    height: 50px;
+    width: 770px;
+    padding: 5px 0;
+    overflow: hidden
+}
+
+#show .button {
+    float: right
+}
+
+#anAll {
+    width: 980px
+}
+
+input.answerCon {
+    float: right;
+    padding: 3px 18px;
+    margin: 0 20px;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    background: #27ae61;
+    border-radius: 5px
+}
+
+input.answerCon:hover {
+    background: #60a341
+}
+
+#page p {
+    cursor: pointer
+}
+
+#art_main {
+    overflow: hidden;
+    min-height: 400px
+}
+
+#art_main .guide_message {
+    margin-top: 50px
+}
+
+#search_art {
+    padding: 40px;
+    background: white;
+    border-radius: 20px
+}
+
+#search_art h2 {
+    font-size: 25px;
+    font-weight: normal;
+    border-bottom: 1px solid #aaa;
+    padding: 10px 0
+}
+
+.one_art {
+    padding: 20px 0 15px;
+    border-bottom: 1px solid #aaa
+}
+
+.one_art a {
+    display: block;
+    margin: 5px 0
+}
+
+.one_art h3 {
+    font-weight: normal;
+    font-size: 16px
+}
+
+.one_art span {
+    margin: 0 10px 0 0
+}
+
+.one_art .time {
+    color: #aeb2b7;
+    font-size: 12px
+}
+
+.one_art .ans_num {
+    float: right;
+    background: url(/wikestudy/dist/images/common/2.png) no-repeat left center
+}
+
+.one_art .look_num {
+    padding-left: 24px;
+    background: url(/wikestudy/dist/images/common/watch.png) no-repeat left center
+}
+
+#search_art form {
+    padding: 20px;
+    overflow: hidden
+}
+
+#search_art fieldset {
+    border: 1px solid #aaa;
+    padding: 20px
+}
+
+#search_art legend {
+    margin: 20px;
+    padding: 0 20px;
+    text-align: left
+}
+
+#search_art label {
+    margin: 10px 10px 10px 40px;
+    float: left;
+    padding: 3px
+}
+
+#search_art input {
+    padding: 5px;
+    margin: 0 10px;
+    text-indent: 5px;
+    width: 300px
+}
+
+#search_art button {
+    color: white;
+    background-color: #1bbc9b;
+    padding: 10px 70px;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    float: right;
+    margin: 10px 40px 10px 10px
+}
+
+#search_art button:hover {
+    background-color: #008972
+}
+
+#content{
+    height: 150px!important;
+}
+
+/*** add topic ***/
+#form_topic{
+    width: 100%;
+}
+
+#main_reply .wangEditor-menu-container .menu-item{
+    width: 34px;
+}
+
+.wangEditor-container .wangEditor-txt{
+    min-height: 90px;
+    font-size: 14px;
+}

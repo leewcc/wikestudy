@@ -1,0 +1,483 @@
+@CHARSET "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    color: #444
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", Arial, sans-serif
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #00a7d3
+}
+
+a:hover {
+    color: #0067a6
+}
+
+legend {
+    color: #000
+}
+
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    overflow-y: scroll
+}
+
+.outside {
+    width: 100%;
+    min-width: 1024px;
+    background: #f6f7fb
+}
+
+.wrapper {
+    width: 70%;
+    min-width: 1000px;
+    margin: 0 auto 10px;
+    background: black;
+    text-align: left;
+    padding: 1px
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    color: white;
+    border-radius: 3px
+}
+
+label {
+    cursor: pointer
+}
+
+.center {
+    text-align: center
+}
+
+.hidden_textarea {
+    display: none
+}
+
+.show_textarea {
+    display: block;
+    margin: 15px auto
+}
+
+.illegal {
+    color: red!important
+}
+
+.login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: 2px solid #00abd8!important
+}
+
+#footer {
+    padding-bottom: 0;
+    clear: both;
+    background: #2b2b33 left top
+}
+
+#footer .wrapper {
+    background: #2b2b33
+}
+
+#foot_href {
+    overflow: hidden
+}
+
+#foot_href img {
+    float: left;
+    width: 200px
+}
+
+#foot_href div {
+    display: block;
+    width: 30%;
+    margin: 0 15px 20px;
+    float: right
+}
+
+#foot_href h3 {
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #b4bbbf;
+    text-align: left
+}
+
+#foot_href a {
+    color: #b4bbbf
+}
+
+#foot_href p {
+    color: #b4bbbf
+}
+
+#foot_intro {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #b4bbbf;
+    border-bottom: 1px solid #b4bbbf;
+    margin: 0 auto 10px
+}
+
+#foot_intro a {
+    color: #b4bbbf;
+    display: inline;
+    padding: 20px;
+    line-height: 60px
+}
+
+#foot_copy {
+    color: #b4bbbf;
+    text-align: center;
+    line-height: 40px
+}
+
+.out_pad {
+    padding: 70px 0 0;
+    width: 1002px
+}
+
+body {
+    background: #f6f7fb
+}
+
+#media_header {
+    width: 100%;
+    min-width: 1002px;
+    height: 55px;
+    background: #f6f7fb
+}
+
+#media_header h4 {
+    float: left;
+    margin: 0 5px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 55px
+}
+
+#media_header button {
+    float: left;
+    background: url('/wikestudy/dist/images/common/all.png') white no-repeat -189px 0;
+    margin: 10px 30px;
+    width: 40px;
+    height: 40px;
+    border: 0
+}
+
+#media_header #couName {
+    fonvt-size: 12px;
+    color: #787d82
+}
+
+#wrapper {
+    width: 100%;
+    min-width: 1002px;
+    overflow: hidden
+}
+
+#wrapper #video {
+    margin: 0 23.5em 0 0;
+    padding: 0;
+    height: 600px;
+    position: relative;
+    background: black
+}
+
+#no_video {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px
+}
+
+#list_section {
+    min-height: 600px;
+    background: #f6f7fb;
+    width: 23em;
+    float: right
+}
+
+#video_list {
+    float: right;
+    width: 3em;
+    margin: 0 auto -3000px;
+    padding-bottom: 3000px;
+    background: #2b2b33
+}
+
+#video_list button {
+    color: white;
+    border: 0;
+    padding: .5em;
+    margin: 9px auto
+}
+
+#video_list a {
+    display: block;
+    color: white;
+    border: 0;
+    margin: 9px auto;
+    padding: .5em;
+    height: 3em
+}
+
+#video object {
+    width: 100%;
+    height: 600px
+}
+
+#reply_list,
+#note_list,
+#topic_list,
+#data_list {
+    display: none;
+    float: left;
+    width: 95%;
+    margin: 2%
+}
+
+#reply_list #show div,
+#note_list div {
+    overflow: hidden
+}
+
+#cha_list {
+    display: block
+}
+
+#list {
+    display: block;
+    width: 20em;
+    height: 598px;
+    border-top: 1px solid #AAA;
+    border-bottom: 1px solid #AAA;
+    float: left;
+    overflow-y: auto
+}
+
+#list textarea {
+    width: 99.5%;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 70px
+}
+
+#list button {
+    float: right;
+    color: white;
+    padding: 5px 10px;
+    background: #00abd7;
+    border: 0;
+    border-radius: 5px
+}
+
+#show_cha,
+#comment_get,
+#doNote,
+#getTopic,
+#getTest {
+    background: url('/wikestudy/dist/images/system/media.png') no-repeat;
+    width: 100%;
+    height: 42px
+}
+
+#getTest {
+    display: block
+}
+
+#show_cha {
+    background-position: -41px 3px
+}
+
+.selected #show_cha, #show_cha:hover{
+    background-position: 7px 3px
+}
+
+#comment_get {
+    background-position: -41px -56px
+}
+
+li.selected #comment_get,#comment_get:hover {
+    background-position: 7px -56px
+}
+
+#doNote {
+    background-position: -41px -116px
+}
+
+li.selected #doNote, #doNote:hover {
+    background-position: 7px -116px
+}
+
+#getTopic {
+    background-position: -41px -175px
+}
+
+li.selected #getTopic,#getTopic:hover {
+    background-position: 7px -175px
+}
+
+#getTest {
+    background-position: -41px -295px;
+    display: block;
+    width: 100%
+}
+#getTest:hover{
+	background-position: 7px -295px
+}
+#cha_list h1 {
+    font-size: 20px;
+    margin: 10px 0;
+    padding-left: 32px;
+    background: url("/wikestudy/dist/images/system/chapter.png") no-repeat 0 5px
+}
+
+.cou_chapter {
+    margin: 1em 0 1em .5em
+}
+
+.cou_chapter h4 {
+    color: #59595b;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.cou_section a {
+    color: #59595b;
+    display: block;
+    padding: .3em 0 .3em 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap
+}
+
+.cou_section a:hover {
+    color: #02a5ce;
+    cursor: pointer;
+    background: url("/wikestudy/dist/images/common/playBlue.png") #eee no-repeat 8px center
+}
+
+#succRes {
+    display: none
+}
+
+#reply_list #myForm {
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+#reply_list #show div {
+    margin: 5px 0
+}
+
+#reply_list #show span,
+#note_list #show_note span {
+    color: #DDD;
+    float: right;
+    font-size: 12px
+}
+
+#reply_list input {
+    padding: 5px 30px;
+    float: right;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0 10px 10px;
+    background: #00a7d3
+}
+
+#reply_list button {
+    padding: 5px 30px;
+    float: right;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    margin: 10px 0 10px 10px;
+    background: #00a7d3
+}
+
+#reply_list button:hover {
+    background: #0067a6
+}
+
+#HLSPlayer｛
+    display: none !important;
+｝

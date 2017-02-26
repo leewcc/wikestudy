@@ -1,0 +1,389 @@
+@CHARSET "UTF-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+p,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+fieldset,
+lengend,
+button,
+input,
+textarea,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    color: #444
+}
+
+body {
+    width: 100%;
+    font-size: 14px;
+    font-family: "Microsoft YaHei", Arial, sans-serif
+}
+
+h1 {
+    font-size: 18px
+}
+
+h2 {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 14px
+}
+
+h4,
+h5,
+h6 {
+    font-size: 100%
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+a {
+    text-decoration: none;
+    color: #00a7d3
+}
+
+a:hover {
+    color: #0067a6
+}
+
+legend {
+    color: #000
+}
+
+img {
+    border: 0
+}
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%
+}
+
+textarea {
+    resize: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+html {
+    overflow-y: scroll
+}
+
+.outside {
+    width: 100%;
+    min-width: 1024px;
+    background: #f6f7fb;
+    padding: 1px
+}
+
+.wrapper {
+    width: 70%;
+    min-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+button {
+    cursor: pointer;
+    border: 0;
+    color: white;
+    border-radius: 3px
+}
+
+label {
+    cursor: pointer
+}
+
+.center {
+    text-align: center
+}
+
+.hidden_textarea {
+    display: none
+}
+
+.show_textarea {
+    display: block;
+    margin: 15px auto
+}
+
+.illegal {
+    color: red!important
+}
+
+.login input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+    border: 2px solid #00abd8!important
+}
+
+#nav {
+    padding: 0;
+    height: 70px;
+    background: #2b2b33;
+    overflow: hidden;
+    color: white
+}
+
+#nav a {
+    float: left;
+    color: white;
+    line-height: 70px;
+    background: #2b2b33
+}
+
+#nav a:hover {
+    text-decoration: none
+}
+
+#nav div {
+    overflow: hidden;
+    background: #2b2b33
+}
+
+#nav a#nav_logo img {
+    background: #2b2b33;
+    width: 60px;
+    height: 60px;
+    vertical-align: middle
+}
+
+#nav ul {
+    float: left;
+    margin-left: 15px;
+    background: #2b2b33;
+    overflow: hidden
+}
+
+#nav ul li {
+    float: left
+}
+
+#nav li a {
+    padding: 0 30px
+}
+
+#nav li a:hover {
+    background: #00abd7
+}
+
+#nav form {
+    float: right;
+    margin: 18px 0;
+    padding: 5px;
+    vertical-align: middle;
+    border-radius: 20px;
+    background: white
+}
+
+#nav input {
+    height: 20px;
+    border: 0;
+    text-indent: 5px;
+    background: white;
+    vertical-align: middle;
+    color: #aaa;
+    outline: 0;
+    font-weight: lighter;
+    font-size: 12px
+}
+
+#nav #search {
+    height: 20px;
+    font-size: 16px;
+    width: 20px;
+    padding-right: 5px;
+    cursor: pointer;
+    background: url("/wikestudy/dist/images/common/magnifyingglass.png") no-repeat
+}
+
+#user {
+    display: inline;
+    float: right;
+    padding: 0 10px;
+    width: 190px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 70px;
+    height: 70px;
+    color: #535353
+}
+
+#user a {
+    display: inline;
+    float: right;
+    line-height: 70px
+}
+
+#user #user_name {
+    width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center
+}
+
+#user a:hover {
+    color: #00abd7
+}
+
+#footer {
+    padding-bottom: 0;
+    clear: both;
+    background: #2b2b33 left top
+}
+
+#footer .wrapper {
+    background: #2b2b33
+}
+
+#foot_href {
+    overflow: hidden
+}
+
+#foot_href img {
+    float: left;
+    width: 200px
+}
+
+#foot_href div {
+    display: block;
+    width: 30%;
+    margin: 0 15px 20px;
+    float: right
+}
+
+#foot_href h3 {
+    display: block;
+    margin: 15px 0;
+    font-weight: bold;
+    color: #b4bbbf;
+    text-align: left
+}
+
+#foot_href a {
+    color: #b4bbbf
+}
+
+#foot_href p {
+    color: #b4bbbf
+}
+
+#foot_intro {
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #b4bbbf;
+    border-bottom: 1px solid #b4bbbf;
+    margin: 0 auto 10px
+}
+
+#foot_intro a {
+    color: #b4bbbf;
+    display: inline;
+    padding: 20px;
+    line-height: 60px
+}
+
+#foot_copy {
+    color: #b4bbbf;
+    text-align: center;
+    line-height: 40px
+}
+
+.out_pad {
+    padding: 70px 0 0;
+    width: 1002px
+}
+
+@font-face {
+    font-family: "hobo";
+    src: url("/wikestudy/WebContent/font/segoesc.ttf");
+    font-style: italic
+}
+
+@font-face {
+    font-family: "seg";
+    src: url("/wikestudy/WebContent/font/segoesc.ttf");
+    font-style: italic
+}
+
+#error_page_message {
+    width: 550px;
+    margin: 0 auto
+}
+
+#error_page_message p {
+    font-size: 20px
+}
+
+#error_page_message h1 {
+    font-family: "hobo", "seg", "Microsoft YaHei";
+    font-size: 250px;
+    padding: 0;
+    margin: 0;
+    color: #198bd7
+}
+
+#err_sub {
+    margin: 200px auto;
+    text-align: center;
+    width: 600px;
+    height: 200px
+}
+
+p {
+    font-size: 16px
+}
+
+h3 {
+    font-size: 40px
+}
+
+body {
+    background: #f5f7fa no-repeat left center;
+    font-family: "Microsoft YaHei", Arial, sans-serif;
+    color: #aaa;
+    text-align: center;
+    margin: 0
+}
+
+body a {
+    color: #666
+}
+
+.duan {
+    width: 15px;
+    text-align: center;
+    background: #f5f7fa;
+    border: 0
+}
+
+#jump {
+    margin: 0 10px;
+    text-dacoration: underline
+}
